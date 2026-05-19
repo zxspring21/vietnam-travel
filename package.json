@@ -7,7 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "parse-csv": "node scripts/parse-csv.mjs",
+    "build-stops": "node scripts/build-day-stops.mjs",
+    "generate-coords": "node scripts/generate-coords.mjs",
+    "fetch-photos": "node scripts/generate-coords.mjs && node scripts/fetch-place-photos.mjs",
+    "fetch-reviews": "node scripts/fetch-place-details.mjs",
+    "verify-links": "node scripts/verify-links.mjs"
   },
   "dependencies": {
     "react": "^19.2.6",

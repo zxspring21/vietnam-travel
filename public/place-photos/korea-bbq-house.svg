@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2520"/>
+      <stop offset="100%" style="stop-color:#3d2818"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="url(#g)"/>
+  <circle cx="320" cy="180" r="36" fill="none" stroke="#C8975A" stroke-width="3"/>
+  <circle cx="320" cy="180" r="8" fill="#C8975A"/>
+  <text x="320" y="260" text-anchor="middle" fill="#f5edd6" font-family="system-ui,sans-serif" font-size="18" font-weight="600">Korea BBQ House</text>
+  <text x="320" y="290" text-anchor="middle" fill="#9a8b7a" font-family="system-ui,sans-serif" font-size="13">16.0544, 108.1994</text>
+</svg>
