@@ -37,10 +37,14 @@ export function getPlacePhotoSrc(stop) {
 
 export function getGoogleStaticPhotoUrl(stop) {
   if (!API_KEY) return null;
-  const c =
+  let c =
     stop?.lat != null
       ? { lat: stop.lat, lng: stop.lng }
       : getCoordByCsvId(stop?.csvId) || getCoordByCsvName(stop?.csvName);
+  if (!c && stop?.isHotel && stop?.hotelId) {
+    const h = HOTELS[stop.hotelId];
+    if (h?.lat != null) c = { lat: h.lat, lng: h.lng };
+  }
   if (!c) return null;
   return `https://maps.googleapis.com/maps/api/staticmap?center=${c.lat},${c.lng}&zoom=17&size=640x400&scale=2&maptype=roadmap&markers=color:0xC8975A%7C${c.lat},${c.lng}&key=${API_KEY}`;
 }

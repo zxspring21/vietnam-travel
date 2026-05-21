@@ -26,8 +26,18 @@ export function enrichStops(stops) {
   return (stops || []).map((stop) => {
     const mapsUrl = resolveStopMapsUrl(stop);
     const csv = stop.csvName ? getCsvByName(stop.csvName) : null;
-    const coord = resolveCoord({ ...stop, csvId: csv?.id, mapsUrl });
-    const withMeta = { ...stop, mapsUrl, csvId: csv?.id ?? stop.csvId ?? null, lat: coord?.lat, lng: coord?.lng };
+    const hotel = stop.isHotel && stop.hotelId ? HOTELS[stop.hotelId] : null;
+    const coord = hotel
+      ? { lat: hotel.lat, lng: hotel.lng }
+      : resolveCoord({ ...stop, csvId: csv?.id, mapsUrl });
+    const withMeta = {
+      ...stop,
+      mapsUrl,
+      hotelAddress: hotel?.address,
+      csvId: csv?.id ?? stop.csvId ?? null,
+      lat: coord?.lat,
+      lng: coord?.lng,
+    };
     const openMapsUrl = isGooglePlaceUrl(mapsUrl) ? mapsUrl : openPlaceUrlFromStop(withMeta);
     return {
       ...withMeta,

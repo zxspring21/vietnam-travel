@@ -94,10 +94,8 @@ for (const p of CSV_PLACES) {
 }
 
 const hotels = {
-  "hotel-danangMain": { lat: 16.0544, lng: 108.2498, title: "Grand Mercure" },
-  "hotel-hoiAn": { lat: 15.872, lng: 108.335, title: "Hoiana" },
-  "hotel-hue": { lat: 16.465, lng: 107.59, title: "Pilgrimage Village" },
-  "hotel-danangFinal": { lat: 16.0678, lng: 108.2208, title: "Novotel" },
+  "hotel-danangMain": { lat: 16.0522, lng: 108.2465, title: "Awaken Danang 148 Vo Nguyen Giap" },
+  "hotel-hoiAn": { lat: 15.8878, lng: 108.3472, title: "THE SAGA 321 Cua Dai Hoi An" },
 };
 for (const [id, c] of Object.entries(hotels)) {
   try {

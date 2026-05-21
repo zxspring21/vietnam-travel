@@ -1,29 +1,25 @@
 import { HOTELS } from "./hotels.js";
-import { TRIP_PACKAGE_COUPLE, calcExpenseSummary, EXPENSE_ECONOMY_ACTIVE } from "./expenses.js";
+import { FLIGHT_BOOKING, PACKAGE_BOOKING, KLOOK_COUPLE_TOTAL } from "./bookedActivities.js";
+import { calcExpenseSummary, EXPENSE_ECONOMY_ACTIVE } from "./expenses.js";
 
-const TRIP_COM = "https://tw.trip.com/packages/list?departurecity=台北&arrivalcity=峴港";
 const summary = calcExpenseSummary(EXPENSE_ECONOMY_ACTIVE);
 
 export const TRIP_CONFIG = {
-  tripComUrl: TRIP_COM,
-  packagePerPerson: {
-    low: Math.round(TRIP_PACKAGE_COUPLE.low / 2),
-    mid: Math.round(TRIP_PACKAGE_COUPLE.mid / 2),
-    high: Math.round(TRIP_PACKAGE_COUPLE.high / 2),
-  },
-  addonPerPerson: summary.perPerson,
+  tripComUrl: PACKAGE_BOOKING.url,
+  flightUrl: FLIGHT_BOOKING.url,
+  packagePerPerson: PACKAGE_BOOKING.perPerson,
+  flightPerPerson: FLIGHT_BOOKING.perPersonTwd,
   flightOptions: [
     {
-      id: "option1",
-      dateRange: "6/11 (四) — 6/21 (日) [11天]",
-      outbound: "台灣虎航 IT551 | 桃園 16:35 → 峴港 18:10",
-      inbound: "台灣虎航 IT552 | 峴港 19:10 → 桃園 22:45",
-      status: "推薦",
-      desc: "週四出發票價較低，Trip.com 套餐常配此班次。",
+      dateRange: "6/11 — 6/20",
+      outbound: `台灣虎航 ${FLIGHT_BOOKING.outbound.flight} | ${FLIGHT_BOOKING.outbound.time}`,
+      inbound: `台灣虎航 ${FLIGHT_BOOKING.inbound.flight} | ${FLIGHT_BOOKING.inbound.time}`,
+      status: "已訂",
+      desc: `含於機加酒 · ${FLIGHT_BOOKING.baggage}`,
     },
   ],
   hotels: Object.values(HOTELS).map((h) => ({
-    area: h.area,
+    area: `${h.checkIn}–${h.checkOut} · ${h.area}`,
     name: h.nameZh,
     specs: h.priceHint,
     features: h.features,
@@ -31,5 +27,5 @@ export const TRIP_CONFIG = {
     mapsUrl: h.mapsUrl,
     hotelId: h.id,
   })),
-  packageDealAnalysys: `💡 Trip.com 機加酒雙人約 NT$${TRIP_PACKAGE_COUPLE.low.toLocaleString()}–${TRIP_PACKAGE_COUPLE.high.toLocaleString()}（約 NT$${Math.round(TRIP_PACKAGE_COUPLE.mid / 2).toLocaleString()}/人）。加 Tour+交通+餐飲後，精算表雙人約 NT$${summary.total.toLocaleString()}（每人約 NT$${summary.perPerson.toLocaleString()}），與上方「花費」頁一致。`,
+  packageDealAnalysys: `已訂：機加酒（含虎航）NT$${PACKAGE_BOOKING.coupleTotal.toLocaleString()} + Klook NT$${KLOOK_COUPLE_TOTAL.toLocaleString()} + 其餘約 NT$${(summary.total - PACKAGE_BOOKING.coupleTotal - KLOOK_COUPLE_TOTAL).toLocaleString()} = 雙人總計約 NT$${summary.total.toLocaleString()}（每人 NT$${summary.perPerson.toLocaleString()}）。`,
 };

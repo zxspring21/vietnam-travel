@@ -27,8 +27,8 @@ export default function App() {
   return (
     <div className="app-shell">
       <header className="app-header">
-        <h1>🇻🇳 中越蜜月 · 6/11–6/21</h1>
-        <p>Trip.com 機加酒 · Google 地圖導航 · 91+ CSV 景點 · 每日飯店起迄 · 開車路線模式</p>
+        <h1>🇻🇳 中越蜜月 · 6/11–6/20</h1>
+        <p>已訂虎航+機加酒+Klook · Awaken→Saga · 文字地圖連結</p>
       </header>
 
       <nav className="app-nav">

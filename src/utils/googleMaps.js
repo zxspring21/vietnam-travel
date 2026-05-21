@@ -2,6 +2,7 @@
  * Google Maps — 座標導航（避免完整地址無法算路）
  */
 import { getCoordByCsvName, getCoordByCsvId } from "../data/csvCoords";
+import { HOTELS } from "../data/hotels";
 
 export const MAPS_QUERY_ALIAS = {
   海雲關: "Hai Van Pass",
@@ -55,12 +56,26 @@ export function isGooglePlaceUrl(url) {
  * 外開單一站點
  * 優先使用 CSV 原始 Place URL（最準），其次才是 Geocoding 座標
  */
+/** 含 /maps/search/ 的地址或地點查詢連結 */
+export function isGoogleMapsUrl(url) {
+  return Boolean(url && /google\.com\/maps/i.test(url) && !/\/dir\//i.test(url));
+}
+
 export function openPlaceUrlFromStop(stop) {
   const raw = stop?.mapsUrl;
   if (isGooglePlaceUrl(raw)) return raw;
+  if (isGoogleMapsUrl(raw)) return raw;
+
+  if (stop?.isHotel && stop?.hotelId) {
+    const h = HOTELS[stop.hotelId];
+    if (h?.mapsUrl) return h.mapsUrl;
+    if (h?.address) {
+      return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(h.address)}`;
+    }
+  }
 
   const c = resolveCoord(stop);
-  if (c) {
+  if (c && !stop?.isHotel) {
     return `https://www.google.com/maps/search/?api=1&query=${c.lat},${c.lng}&hl=zh-TW`;
   }
   const placeName = placeNameFromUrl(raw);

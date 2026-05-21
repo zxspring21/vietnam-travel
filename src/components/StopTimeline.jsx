@@ -79,13 +79,21 @@ export default function StopTimeline({ stops, accentColor = "#C8975A" }) {
                 </div>
                 <div style={{ fontWeight: 700, fontSize: "18px", lineHeight: 1.35 }}>{stop.title}</div>
                 {stop.isHotel && stop.hotelId && HOTELS[stop.hotelId] && (
-                  <div style={{ fontSize: "14px", color: "var(--accent-blue)", marginTop: "8px" }}>
-                    {HOTELS[stop.hotelId].features}
-                    {" · "}
-                    <a href={HOTELS[stop.hotelId].tripUrl} target="_blank" rel="noopener noreferrer" style={{ color: "var(--accent-blue)" }}>
-                      Trip.com ↗
-                    </a>
+                  <div style={{ fontSize: "14px", color: "var(--accent-blue)", marginTop: "8px", lineHeight: 1.6 }}>
+                    <div>{HOTELS[stop.hotelId].address}</div>
+                    <div style={{ marginTop: "4px" }}>
+                      {HOTELS[stop.hotelId].features}
+                      {" · "}
+                      <a href={HOTELS[stop.hotelId].tripUrl} target="_blank" rel="noopener noreferrer" style={{ color: "var(--accent-blue)" }}>
+                        Trip.com ↗
+                      </a>
+                    </div>
                   </div>
+                )}
+                {stop.klookUrl && (
+                  <a href={stop.klookUrl} target="_blank" rel="noopener noreferrer" style={{ fontSize: "14px", color: "#7FCD91", marginTop: "8px", display: "inline-block", fontWeight: 600 }}>
+                    已訂 Klook 商品 ↗
+                  </a>
                 )}
                 {stop.detail && (
                   <p style={{ fontSize: "15px", color: "var(--text-muted)", margin: "10px 0 0", lineHeight: 1.6 }}>{stop.detail}</p>
