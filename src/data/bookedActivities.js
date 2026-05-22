@@ -25,6 +25,25 @@ export const PACKAGE_BOOKING = {
 /** @type {Array<{id:string, name:string, platform:string, url:string, coupleTwd:number, days:number[], coversTransport:boolean, note:string}>} */
 export const KLOOK_BOOKINGS = [
   {
+    id: "dad-day-1573",
+    name: "峴港一日遊（大理石山+山茶半島+占婆博物館+韓市場）",
+    platform: "Klook",
+    url: "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/",
+    coupleTwd: 1916,
+    perPersonTwd: 958,
+    days: [1],
+    coversTransport: true,
+    note: "09:00 飯店接送 · 13:30 回飯店 · 2 人",
+    stops: [
+      { label: "努諾可石雕", csvName: null },
+      { label: "大理石山售票亭（五行山）", csvName: "The Marble Mountains", detail: "舍利塔、靈應一寺、唐鐘洞" },
+      { label: "峴港靈應寺·白佛觀音像（山茶半島）", csvName: "Chùa Linh Ứng", detail: "Bai But / Lady Buddha 一帶" },
+      { label: "順福橋", csvName: null, detail: "Thuan Phuoc Bridge" },
+      { label: "峴港占婆雕刻博物館", csvName: "Da Nang Museum of Cham Sculpture" },
+      { label: "韓市場", csvName: "Han Market" },
+    ],
+  },
+  {
     id: "bana-13283",
     name: "峴港太陽世界巴拿山門票（含雲霄飛車3+自助午餐+往返巴士）",
     platform: "Klook",
@@ -119,14 +138,19 @@ export function getBookingsForDay(day) {
 
 /** 全表核對用：每個 activityId 僅一筆 */
 export const KLOOK_BY_ACTIVITY_ID = {
-  13283: KLOOK_BOOKINGS[0],
-  4808: KLOOK_BOOKINGS[1],
-  1602: KLOOK_BOOKINGS[2],
-  17514: KLOOK_BOOKINGS[3],
-  182982: KLOOK_BOOKINGS[4],
-  24274: KLOOK_BOOKINGS[5],
-  72346: KLOOK_BOOKINGS[6],
+  1573: KLOOK_BOOKINGS[0],
+  13283: KLOOK_BOOKINGS[1],
+  4808: KLOOK_BOOKINGS[2],
+  1602: KLOOK_BOOKINGS[3],
+  17514: KLOOK_BOOKINGS[4],
+  182982: KLOOK_BOOKINGS[5],
+  24274: KLOOK_BOOKINGS[6],
+  72346: KLOOK_BOOKINGS[7],
 };
+
+export function getKlookBooking(id) {
+  return KLOOK_BOOKINGS.find((b) => b.id === id);
+}
 
 export function dayHasCoveredTransport(day) {
   return getBookingsForDay(day).some((b) => b.coversTransport);

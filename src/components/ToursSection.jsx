@@ -45,7 +45,25 @@ function TourCard({ tour }) {
           {tour.rating && <span style={{ color: "#7FCD91" }}> · ⭐ {tour.rating}</span>}
           {tour.transport ? ` · 🚗 ${tour.transport}` : ""}
         </div>
-        <div style={{ fontSize: "11px", marginTop: "8px", color: "rgba(245,237,214,0.5)" }}>覆蓋：{(tour.covers || []).join("、")}</div>
+        {(tour.covers || []).length > 0 && (
+          <div style={{ marginTop: "10px", display: "flex", flexWrap: "wrap", gap: "6px" }}>
+            {tour.covers.map((label) => (
+              <span
+                key={label}
+                style={{
+                  fontSize: "11px",
+                  padding: "3px 8px",
+                  borderRadius: "6px",
+                  background: "rgba(123,94,167,0.2)",
+                  color: "#c4b5fd",
+                  border: "1px solid rgba(123,94,167,0.35)",
+                }}
+              >
+                {label}
+              </span>
+            ))}
+          </div>
+        )}
         {tour.recommendDays?.length > 0 && (
           <div style={{ fontSize: "11px", marginTop: "4px", color: "#7B5EA7" }}>建議 Day {tour.recommendDays.join(", ")}</div>
         )}
@@ -95,7 +113,14 @@ export default function ToursSection() {
                 </td>
                 <td style={td}>{r.city}</td>
                 <td style={td}>{r.mode}</td>
-                <td style={td}>{r.tourCover || "—"}</td>
+                <td style={td}>
+                  <div>{r.tourCover || "—"}</div>
+                  {r.tourStops?.length > 0 && (
+                    <div style={{ fontSize: "10px", color: "rgba(245,237,214,0.5)", marginTop: "4px", lineHeight: 1.5 }}>
+                      {r.tourStops.join(" → ")}
+                    </div>
+                  )}
+                </td>
                 <td style={td}>
                   {r.tourUrl ? (
                     <a href={r.tourUrl} target="_blank" rel="noopener noreferrer" style={{ color: "#C8975A" }}>

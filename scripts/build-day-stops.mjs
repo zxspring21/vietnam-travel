@@ -21,15 +21,18 @@ const PLAN = {
     ["21:30", null, "返回 · Awaken Danang", "住宿", "Grab", null, { hotel: "danangMain", end: true }],
   ],
   1: [
-    ["08:00", null, "出發 · Awaken Danang", "住宿", null, null, { hotel: "danangMain" }],
-    ["09:00", "SIX ON SIX CAFE - BRUNCH & RESTAURANT", null, "美食", "Grab", null, {}],
-    ["10:15", "Da Nang Cathedral", "粉紅大教堂", "景點", "Grab", null, {}],
-    ["11:00", "Han Market", "漢市場", "購物", "Grab", "可少額換匯", {}],
-    ["12:30", "Nhà hàng Madame Lân", null, "美食", "Grab", null, {}],
-    ["14:30", "Da Nang Museum of Cham Sculpture", null, "景點", "Grab", null, {}],
-    ["17:30", "Esco Beach, Bar Lounge & Restaurant", "美溪夕陽晚餐", "美食", "Grab", "近飯店", {}],
-    ["21:00", "Dragon Bridge", "龍橋", "景點", "Grab", null, {}],
-    ["22:00", null, "返回 · Awaken Danang", "住宿", "Grab", null, { hotel: "danangMain", end: true }],
+    ["08:30", null, "出發 · Awaken Danang", "住宿", null, "Klook #1573 · 09:00 接送", { hotel: "danangMain", klook: "dad-day-1573" }],
+    ["09:00", null, "Klook 峴港一日遊", "景點", "Klook 飯店接送", "雙人 NT$1,916", { klook: "dad-day-1573" }],
+    ["09:30", null, "努諾可石雕", "景點", "Tour", "Non Nuoc 石雕村", { klook: "dad-day-1573" }],
+    ["10:15", "The Marble Mountains", "大理石山售票亭", "景點", "Tour", "五行山·舍利塔·靈應一寺·唐鐘洞", { klook: "dad-day-1573" }],
+    ["11:15", "Chùa Linh Ứng", "靈應寺白佛觀音像", "景點", "Tour", "山茶半島 Bai But", { klook: "dad-day-1573" }],
+    ["12:00", null, "順福橋", "景點", "Tour", "Thuan Phuoc Bridge", { klook: "dad-day-1573" }],
+    ["12:30", "Da Nang Museum of Cham Sculpture", "占婆雕刻博物館", "景點", "Tour", null, { klook: "dad-day-1573" }],
+    ["13:00", "Han Market", "韓市場", "購物", "Tour", "可少額換匯", { klook: "dad-day-1573" }],
+    ["13:30", null, "返回 Awaken 飯店", "住宿", "Klook", null, { hotel: "danangMain", klook: "dad-day-1573" }],
+    ["18:00", "Dragon Bridge", "龍橋", "景點", "Grab", "週六晚可賞噴火", {}],
+    ["19:00", "LoCo Restaurant - Danang Seafood Restaurant - 다낭 레스토랑", null, "美食", "Grab", "近美溪", {}],
+    ["21:30", null, "返回 · Awaken Danang", "住宿", "Grab", null, { hotel: "danangMain", end: true }],
   ],
   2: [
     ["07:00", null, "出發 · Awaken Danang", "住宿", null, "Klook #13283 接駁", { hotel: "danangMain", klook: "bana-13283" }],
@@ -41,9 +44,9 @@ const PLAN = {
     ["21:30", null, "返回 · Awaken Danang", "住宿", "Grab", null, { hotel: "danangMain", end: true }],
   ],
   3: [
-    ["09:00", null, "出發 · Awaken Danang", "住宿", null, null, { hotel: "danangMain" }],
-    ["10:00", "Lady Buddha", null, "景點", "Grab", null, {}],
-    ["12:00", "My Hanh Seafood", null, "美食", "Grab", "山茶半島回程順路", {}],
+    ["09:00", null, "出發 · Awaken Danang", "住宿", null, "峴港自由行", { hotel: "danangMain" }],
+    ["10:00", "Da Nang Cathedral", "粉紅大教堂", "景點", "Grab", null, {}],
+    ["12:00", "My Hanh Seafood", null, "美食", "Grab", "近美溪", {}],
     ["14:00", "Luxury Herbal Spa", null, "體驗", "Grab", null, {}],
     ["17:00", "Con Market", null, "購物", "Grab", null, {}],
     ["19:00", "LoCo Restaurant - Danang Seafood Restaurant - 다낭 레스토랑", null, "美食", "Grab", "近美溪", {}],
@@ -108,6 +111,7 @@ const PLAN = {
 };
 
 const KLOOK_URLS = {
+  "dad-day-1573": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/",
   "bana-13283": "https://www.klook.com/zh-TW/activity/13283-ba-na-hills-ticket-da-nang/",
   "hue-4808": "https://www.klook.com/zh-TW/activity/4808-hue-day-tour-da-nang/",
   "myson-1602": "https://www.klook.com/zh-TW/activity/1602-my-son-discovery-hoi-an/",

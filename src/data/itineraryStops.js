@@ -1,6 +1,6 @@
 /**
  * 每日站點 — 自動生成（npm run build-stops）
- * 行程 6/11–6/20 · CSV 景點：34 個
+ * 行程 6/11–6/20 · CSV 景點：33 個
  */
 const DAD = "https://www.google.com/maps/place/Da+Nang+International+Airport/data=!4m2!3m1!1s0x3141cb2741ea73b5:0x97e732c06fb2980b";
 const TPE = "https://www.google.com/maps/place/Taiwan+Taoyuan+International+Airport/data=!4m2!3m1!1s0x3442d97d0e6e5d61:0xf86a31b9d9c4c5e2";
@@ -56,72 +56,113 @@ export const DAY_STOPS = {
   ],
   "1": [
     {
-      "time": "08:00",
+      "time": "08:30",
       "type": "住宿",
-      "detail": "",
+      "detail": "Klook #1573 · 09:00 接送",
       "title": "出發 · Awaken Danang",
       "isHotel": true,
       "hotelId": "danangMain",
-      "inCsv": true
+      "inCsv": true,
+      "klookId": "dad-day-1573",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
     },
     {
       "time": "09:00",
-      "type": "美食",
-      "transportFromPrev": "Grab",
-      "detail": "",
-      "csvName": "SIX ON SIX CAFE - BRUNCH & RESTAURANT",
-      "title": "SIX ON SIX CAFE - BRUNCH & RESTAURANT"
+      "type": "景點",
+      "transportFromPrev": "Klook 飯店接送",
+      "detail": "雙人 NT$1,916",
+      "title": "Klook 峴港一日遊",
+      "klookId": "dad-day-1573",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
+    },
+    {
+      "time": "09:30",
+      "type": "景點",
+      "transportFromPrev": "Tour",
+      "detail": "Non Nuoc 石雕村",
+      "title": "努諾可石雕",
+      "klookId": "dad-day-1573",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
     },
     {
       "time": "10:15",
       "type": "景點",
-      "transportFromPrev": "Grab",
-      "detail": "",
-      "csvName": "Da Nang Cathedral",
-      "title": "粉紅大教堂"
+      "transportFromPrev": "Tour",
+      "detail": "五行山·舍利塔·靈應一寺·唐鐘洞",
+      "csvName": "The Marble Mountains",
+      "title": "大理石山售票亭",
+      "klookId": "dad-day-1573",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
     },
     {
-      "time": "11:00",
-      "type": "購物",
-      "transportFromPrev": "Grab",
-      "detail": "可少額換匯",
-      "csvName": "Han Market",
-      "title": "漢市場"
+      "time": "11:15",
+      "type": "景點",
+      "transportFromPrev": "Tour",
+      "detail": "山茶半島 Bai But",
+      "csvName": "Chùa Linh Ứng",
+      "title": "靈應寺白佛觀音像",
+      "klookId": "dad-day-1573",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
+    },
+    {
+      "time": "12:00",
+      "type": "景點",
+      "transportFromPrev": "Tour",
+      "detail": "Thuan Phuoc Bridge",
+      "title": "順福橋",
+      "klookId": "dad-day-1573",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
     },
     {
       "time": "12:30",
-      "type": "美食",
-      "transportFromPrev": "Grab",
-      "detail": "",
-      "csvName": "Nhà hàng Madame Lân",
-      "title": "Nhà hàng Madame Lân"
-    },
-    {
-      "time": "14:30",
       "type": "景點",
-      "transportFromPrev": "Grab",
+      "transportFromPrev": "Tour",
       "detail": "",
       "csvName": "Da Nang Museum of Cham Sculpture",
-      "title": "Da Nang Museum of Cham Sculpture"
+      "title": "占婆雕刻博物館",
+      "klookId": "dad-day-1573",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
     },
     {
-      "time": "17:30",
-      "type": "美食",
-      "transportFromPrev": "Grab",
-      "detail": "近飯店",
-      "csvName": "Esco Beach, Bar Lounge & Restaurant",
-      "title": "美溪夕陽晚餐"
+      "time": "13:00",
+      "type": "購物",
+      "transportFromPrev": "Tour",
+      "detail": "可少額換匯",
+      "csvName": "Han Market",
+      "title": "韓市場",
+      "klookId": "dad-day-1573",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
     },
     {
-      "time": "21:00",
+      "time": "13:30",
+      "type": "住宿",
+      "transportFromPrev": "Klook",
+      "detail": "",
+      "title": "返回 Awaken 飯店",
+      "isHotel": true,
+      "hotelId": "danangMain",
+      "inCsv": true,
+      "klookId": "dad-day-1573",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
+    },
+    {
+      "time": "18:00",
       "type": "景點",
       "transportFromPrev": "Grab",
-      "detail": "",
+      "detail": "週六晚可賞噴火",
       "csvName": "Dragon Bridge",
       "title": "龍橋"
     },
     {
-      "time": "22:00",
+      "time": "19:00",
+      "type": "美食",
+      "transportFromPrev": "Grab",
+      "detail": "近美溪",
+      "csvName": "LoCo Restaurant - Danang Seafood Restaurant - 다낭 레스토랑",
+      "title": "LoCo Restaurant - Danang Seafood Restaurant - 다낭 레스토랑"
+    },
+    {
+      "time": "21:30",
       "type": "住宿",
       "transportFromPrev": "Grab",
       "detail": "",
@@ -202,7 +243,7 @@ export const DAY_STOPS = {
     {
       "time": "09:00",
       "type": "住宿",
-      "detail": "",
+      "detail": "峴港自由行",
       "title": "出發 · Awaken Danang",
       "isHotel": true,
       "hotelId": "danangMain",
@@ -213,14 +254,14 @@ export const DAY_STOPS = {
       "type": "景點",
       "transportFromPrev": "Grab",
       "detail": "",
-      "csvName": "Lady Buddha",
-      "title": "Lady Buddha"
+      "csvName": "Da Nang Cathedral",
+      "title": "粉紅大教堂"
     },
     {
       "time": "12:00",
       "type": "美食",
       "transportFromPrev": "Grab",
-      "detail": "山茶半島回程順路",
+      "detail": "近美溪",
       "csvName": "My Hanh Seafood",
       "title": "My Hanh Seafood"
     },
@@ -669,4 +710,4 @@ export const DAY_STOPS = {
   ]
 };
 
-export const ITINERARY_CSV_COUNT = 34;
+export const ITINERARY_CSV_COUNT = 33;
