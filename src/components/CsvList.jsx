@@ -33,7 +33,7 @@ export default function CsvList() {
           行程已勾選 {coverage.checkedInItinerary} / {coverage.totalCsv} 個景點
         </div>
         <div style={{ fontSize: "12px", color: "rgba(245,237,214,0.6)", marginTop: "6px" }}>
-          下方卡片含景點背景圖；「✓ 已排」+ Day 標籤表示出現在哪幾天行程
+          下方為 Google Places 實景照（非地圖截圖）；「✓ 已排」+ Day 標籤表示出現在哪幾天行程
         </div>
       </div>
       <p style={intro}>來自您更新的 central_vietnam_itinerary.csv，連結已校正。</p>

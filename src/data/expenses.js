@@ -17,10 +17,10 @@ export const EXPENSE_CATEGORIES = [
     color: "#C8975A",
     items: [
       {
-        name: "Trip.com 6/11–6/20 虎航+Awaken+Saga（2人）",
+        name: "Trip.com 6/11–6/20 虎航+Elite+Saga（2人）",
         amount: PACKAGE_BOOKING.coupleTotal,
         link: PACKAGE_BOOKING.url,
-        note: `含虎航 IT551/IT552 · ${FLIGHT_BOOKING.baggage} · Awaken 6/11–17 · Saga 6/17–20`,
+        note: `含虎航 IT551/IT552 · ${FLIGHT_BOOKING.baggage} · Elite Riverlight 6/11–17 · Saga 6/17–20`,
       },
     ],
   },
@@ -44,7 +44,7 @@ export const EXPENSE_CATEGORIES = [
         name: "機場接送、市區短程、竹籃船至港口等",
         amount: GRAB_MISC,
         link: "https://www.google.com/maps/search/?api=1&query=Grab+Da+Nang",
-        note: "Klook 已涵蓋：巴拿山巴士、順化團、美山團、印象秀、峴港↔會安接送",
+        note: "Klook 已涵蓋：巴拿山、順化、美山、烹飪課接送、印象秀、峴港↔會安接送",
       },
     ],
   },

@@ -9,6 +9,8 @@ import { getDayRouteSummary } from "../utils/dayRoute";
 import { getHotelForDay } from "../data/hotels";
 import { getDayTourSummary } from "../utils/dayTours";
 import { dayHasCoveredTransport } from "../data/bookedActivities";
+import ExchangeTip from "./ExchangeTip";
+import HoiAnPassPanel from "./HoiAnPassPanel";
 
 export default function DailyItinerary({ initialDay = 0 }) {
   const [activeDay, setActiveDay] = useState(initialDay);
@@ -67,6 +69,10 @@ export default function DailyItinerary({ initialDay = 0 }) {
         </h2>
 
         <DayRouteLinks stops={rawStops} day={safeDay} />
+
+        {safeDay === 0 && <ExchangeTip day={0} />}
+        {safeDay === 1 && <ExchangeTip day={1} />}
+        {safeDay === 6 && <HoiAnPassPanel />}
 
         {transportInfo && (
           <div className="card" style={{ marginBottom: "20px", fontSize: "15px" }}>

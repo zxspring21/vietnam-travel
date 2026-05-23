@@ -1,5 +1,178 @@
-/** 自動生成：central_vietnam_itinerary.csv · 94 筆 · 請執行 npm run parse-csv */
+/** 自動生成：central_vietnam_itinerary.csv · 119 筆 · 請執行 npm run parse-csv */
 export const CSV_PLACES = [
+  {
+    "id": "ellie-s-cafe-hoi-an-healthy-breakfast-brunch-lunch",
+    "name": "Ellie's Cafe Hoi An - Healthy Breakfast- Brunch- Lunch",
+    "note": "吃",
+    "url": "https://www.google.com/maps/place/Ellie's+Cafe+Hoi+An+-+Healthy+Breakfast-+Brunch-+Lunch/data=!4m2!3m1!1s0x31420f03fac9947b:0xb9c978aca1814668",
+    "tags": []
+  },
+  {
+    "id": "ti-m-ch-x-u-ch-ngon-h-i-an",
+    "name": "Tiệm Chè Xíu - Chè Ngon Hội An",
+    "note": "甜點",
+    "url": "https://www.google.com/maps/place/Ti%E1%BB%87m+Ch%C3%A8+X%C3%ADu+-+Ch%C3%A8+Ngon+H%E1%BB%99i+An/data=!4m2!3m1!1s0x31420f87b42221e9:0xab09886d8af8b19b",
+    "tags": []
+  },
+  {
+    "id": "the-center-for-culture-and-sports-of-hoi-an-city",
+    "name": "The Center for Culture and Sports of Hoi An city",
+    "note": "每天10:15、15:15及16:15皆有傳統民俗音樂及舞蹈表演",
+    "url": "https://www.google.com/maps/place/The+Center+for+Culture+and+Sports+of+Hoi+An+city/data=!4m2!3m1!1s0x31420e7cfdd3ff2f:0x8d2d1f8f0f6c7565",
+    "tags": []
+  },
+  {
+    "id": "s-ng-ho-i-square",
+    "name": "Sông Hoài Square",
+    "note": "",
+    "url": "https://www.google.com/maps/place/S%C3%B4ng+Ho%C3%A0i+Square/data=!4m2!3m1!1s0x31420e7d1d4b19e1:0x69e88625d8887763",
+    "tags": []
+  },
+  {
+    "id": "hoi-an-traditional-art-performance-house",
+    "name": "Hoi An Traditional Art Performance House",
+    "note": "每天 10:15、15:15 及 16:15 固定的傳統民俗音樂及舞蹈表演，暫時關閉",
+    "url": "https://www.google.com/maps/place/Hoi+An+Traditional+Art+Performance+House/data=!4m2!3m1!1s0x31420e7e55a5baa9:0xd9d555d9b927d774",
+    "tags": []
+  },
+  {
+    "id": "old-river-restaurant-bar",
+    "name": "Old River Restaurant - Bar",
+    "note": "吃",
+    "url": "https://www.google.com/maps/place/Old+River+Restaurant+-+Bar/data=!4m2!3m1!1s0x31420d753e0796e9:0x2d85978b70d2f03e",
+    "tags": []
+  },
+  {
+    "id": "restaurant-328",
+    "name": "Restaurant 328",
+    "note": "吃",
+    "url": "https://www.google.com/maps/place/Restaurant+328/data=!4m2!3m1!1s0x31420dc5c36d0453:0x41b918b632e84ad8",
+    "tags": []
+  },
+  {
+    "id": "h-i-an-lune-center-for-the-performing-arts",
+    "name": "Hội An Lune Center for the Performing Arts",
+    "note": "會安盧恩中心",
+    "url": "https://www.google.com/maps/place/H%E1%BB%99i+An+Lune+Center+for+the+Performing+Arts/data=!4m2!3m1!1s0x31420e7e38509d01:0x6bc5e7726a81b4c5",
+    "tags": []
+  },
+  {
+    "id": "go-da-nang",
+    "name": "GO! Da Nang",
+    "note": "grocery",
+    "url": "https://www.google.com/maps/place/GO!+Da+Nang/data=!4m2!3m1!1s0x3142184a810229eb:0x155a6ca1b747012",
+    "tags": []
+  },
+  {
+    "id": "lotte-mart-supermarket",
+    "name": "Lotte Mart Supermarket",
+    "note": "supermarket",
+    "url": "https://www.google.com/maps/place/Lotte+Mart+Supermarket/data=!4m2!3m1!1s0x314219e42bd859f1:0x59203ba8579a98a5",
+    "tags": []
+  },
+  {
+    "id": "vincom-plaza-da-nang",
+    "name": "Vincom Plaza Da Nang",
+    "note": "shopping",
+    "url": "https://www.google.com/maps/place/Vincom+Plaza+Da+Nang/data=!4m2!3m1!1s0x3142182e92da4189:0x6c81c812834b1bdb",
+    "tags": []
+  },
+  {
+    "id": "golden-lotus-oriental-organic-spa",
+    "name": "Golden Lotus Oriental Organic Spa",
+    "note": "按摩",
+    "url": "https://www.google.com/maps/place/Golden+Lotus+Oriental+Organic+Spa/data=!4m2!3m1!1s0x31421788abeaffed:0xab6a7a4a299e5928",
+    "tags": []
+  },
+  {
+    "id": "hoa-phu-thanh-tourist-area",
+    "name": "Hoa Phu Thanh Tourist Area",
+    "note": "",
+    "url": "https://www.google.com/maps/place/Hoa+Phu+Thanh+Tourist+Area/data=!4m2!3m1!1s0x3141f77af7e9b92b:0xfaf4e097094874f3",
+    "tags": []
+  },
+  {
+    "id": "the-saga-hotel-hoi-an",
+    "name": "THE SAGA HOTEL HOI AN",
+    "note": "hotel",
+    "url": "https://www.google.com/maps/place/THE+SAGA+HOTEL+HOI+AN/data=!4m2!3m1!1s0x31420d5ba221929b:0x474daecf526df5cf",
+    "tags": [
+      "🏘️ 飯店"
+    ]
+  },
+  {
+    "id": "elite-riverlight-hotel-by-elite24",
+    "name": "Elite Riverlight Hotel by Elite24",
+    "note": "",
+    "url": "https://www.google.com/maps/place/Elite+Riverlight+Hotel+by+Elite24/data=!4m2!3m1!1s0x31421815fba2de95:0x24593a16fd915435",
+    "tags": [
+      "🏘️ 飯店"
+    ]
+  },
+  {
+    "id": "phin-cu-coffee",
+    "name": "Phin Cu Coffee",
+    "note": "喝",
+    "url": "https://www.google.com/maps/place/Phin+Cu+Coffee/data=!4m2!3m1!1s0x31421785765cc519:0x44998794ce93e21f",
+    "tags": []
+  },
+  {
+    "id": "nh-an-vietnamese-local-food-restaurant-and-vegan",
+    "name": "Nhà An - Vietnamese local food restaurant and vegan",
+    "note": "吃",
+    "url": "https://www.google.com/maps/place/Nh%C3%A0+An+-+Vietnamese+local+food+restaurant+and+vegan/data=!4m2!3m1!1s0x3142170d14f5ea4f:0x1eaf14f4ee0f185f",
+    "tags": []
+  },
+  {
+    "id": "non-nuoc-pagoda",
+    "name": "Non Nuoc Pagoda",
+    "note": "",
+    "url": "https://www.google.com/maps/place/Non+Nuoc+Pagoda/data=!4m2!3m1!1s0x314210c62c63037d:0xb168fc4503bf59a3",
+    "tags": []
+  },
+  {
+    "id": "ba-na-hills-sunworld",
+    "name": "Ba Na Hills SunWorld",
+    "note": "",
+    "url": "https://www.google.com/maps/place/Ba+Na+Hills+SunWorld/data=!4m2!3m1!1s0x3141f60e6b3844c9:0x5c53b85f61797909",
+    "tags": []
+  },
+  {
+    "id": "the-monkey-mountain",
+    "name": "The Monkey Mountain",
+    "note": "",
+    "url": "https://www.google.com/maps/place/The+Monkey+Mountain/data=!4m2!3m1!1s0x31423df9a0e80d5b:0xc293c9e3814d144e",
+    "tags": [
+      "🏄 玩"
+    ]
+  },
+  {
+    "id": "nh-v-ng-c-nh",
+    "name": "Nhà Vọng cảnh",
+    "note": "",
+    "url": "https://www.google.com/maps/place/Nh%C3%A0+V%E1%BB%8Dng+c%E1%BA%A3nh/data=!4m2!3m1!1s0x31423d36cec8c0d3:0xb004d995e07257e2",
+    "tags": [
+      "🏄 玩"
+    ]
+  },
+  {
+    "id": "ph-bi-b-o",
+    "name": "PHỞ BI BÉO",
+    "note": "",
+    "url": "https://www.google.com/maps/place/PH%E1%BB%9E+BI+B%C3%89O/data=!4m2!3m1!1s0x314219d47749c0e5:0xd1769c5d1d572e75",
+    "tags": [
+      "🍔 吃"
+    ]
+  },
+  {
+    "id": "moggumeong",
+    "name": "Moggumeong",
+    "note": "",
+    "url": "https://www.google.com/maps/place/Moggumeong/data=!4m2!3m1!1s0x314219016710a975:0xfd635d4b3d45942e",
+    "tags": [
+      "🍔 吃"
+    ]
+  },
   {
     "id": "lady-buddha",
     "name": "Lady Buddha",
@@ -92,6 +265,15 @@ export const CSV_PLACES = [
   },
   {
     "id": "海雲關",
+    "name": "海雲關",
+    "note": "",
+    "url": "https://www.google.com/maps/place/%E6%B5%B7%E9%9B%B2%E9%97%9C/data=!4m2!3m1!1s0x31422151a4984555:0x9a66217b26b3f759",
+    "tags": [
+      "🏄 玩"
+    ]
+  },
+  {
+    "id": "海雲關-35",
     "name": "海雲關",
     "note": "",
     "url": "https://www.google.com/maps/place/%E6%B5%B7%E9%9B%B2%E9%97%9C/data=!4m2!3m1!1s0x3142219e02bc568b:0xb04a3eba486386b5",
@@ -190,7 +372,7 @@ export const CSV_PLACES = [
     ]
   },
   {
-    "id": "c-ng-c-ph-22",
+    "id": "c-ng-c-ph-46",
     "name": "Cộng Cà Phê",
     "note": "",
     "url": "https://www.google.com/maps/place/C%E1%BB%99ng+C%C3%A0+Ph%C3%AA/data=!4m2!3m1!1s0x314218321ae9468b:0x7f3c3d5f44588746",
@@ -631,13 +813,6 @@ export const CSV_PLACES = [
     "tags": []
   },
   {
-    "id": "靈應寺",
-    "name": "靈應寺",
-    "note": "",
-    "url": "https://www.google.com/maps/place/%E9%9D%88%E6%87%89%E5%AF%BA/data=!4m2!3m1!1s0x314210c62c63037d:0xb168fc4503bf59a3",
-    "tags": []
-  },
-  {
     "id": "my-son-sanctuary",
     "name": "My Son Sanctuary",
     "note": "",
@@ -755,10 +930,24 @@ export const CSV_PLACES = [
     "note": "",
     "url": "https://www.google.com/maps/place/Han+Market/data=!4m2!3m1!1s0x31421832397ecc0d:0x90b24f8b8cb2873f",
     "tags": []
+  },
+  {
+    "id": "museum-of-trade-ceramics",
+    "name": "Museum of Trade Ceramics",
+    "note": "陶瓷貿易博物館·套票 80 Trần Phú",
+    "url": "https://www.google.com/maps/search/?api=1&query_place_id=ChIJ6-ee-34OQjERHuaiqzF9c8s",
+    "tags": []
+  },
+  {
+    "id": "hoi-an-museum",
+    "name": "Hoi An Museum",
+    "note": "会安历史文化博物館·套票",
+    "url": "https://www.google.com/maps/search/?api=1&query_place_id=ChIJ-ZrBZ7sPQjERPUCqNK7c0Ng",
+    "tags": []
   }
 ];
 
-export const CSV_PLACE_COUNT = 94;
+export const CSV_PLACE_COUNT = 119;
 
 const byName = new Map();
 const byId = new Map();

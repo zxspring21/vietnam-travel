@@ -1,14 +1,7 @@
 import { getCsvByName } from "../data/csvRegistry";
 import { getCoordByCsvName } from "../data/csvCoords";
 import { HOTELS } from "../data/hotels";
-import {
-  buildDayDirectionsUrl,
-  embedDirectionsFromStops,
-  embedUrlFromStop,
-  isGooglePlaceUrl,
-  openPlaceUrlFromStop,
-  resolveCoord,
-} from "./googleMaps";
+import { buildDayDirectionsUrl, isGooglePlaceUrl, openPlaceUrlFromStop, resolveCoord } from "./googleMaps";
 
 export function resolveStopMapsUrl(stop) {
   if (stop.mapsUrl) return stop.mapsUrl;
@@ -17,7 +10,12 @@ export function resolveStopMapsUrl(stop) {
     if (p?.url) return p.url;
   }
   if (stop.isHotel && stop.hotelId) {
-    return HOTELS[stop.hotelId]?.mapsUrl;
+    const h = HOTELS[stop.hotelId];
+    if (h?.csvName) {
+      const p = getCsvByName(h.csvName);
+      if (p?.url) return p.url;
+    }
+    return h?.mapsUrl;
   }
   return null;
 }
@@ -43,7 +41,6 @@ export function enrichStops(stops) {
       ...withMeta,
       openMapsUrl,
       inCsv: Boolean(csv || stop.isHotel),
-      embedUrl: embedUrlFromStop(withMeta),
     };
   });
 }
@@ -52,7 +49,6 @@ export function dayMapUrls(stops) {
   const enriched = enrichStops(stops);
   return {
     directionsUrl: buildDayDirectionsUrl(enriched),
-    embedUrl: embedDirectionsFromStops(enriched),
     stops: enriched,
   };
 }

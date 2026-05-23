@@ -1,15 +1,15 @@
-/** 行程 6/11–6/20（10 天）— 已訂 Klook + Awaken / Saga 機加酒 */
+/** 行程 6/11–6/20（10 天）— 已訂 Klook + Elite Riverlight / Saga 機加酒 */
 export const DAILY_DETAILS = [
   {
     day: 0,
     date: "6/11(四)",
-    title: "抵達峴港 · Awaken",
+    title: "抵達峴港 · Elite Riverlight",
     emoji: "✈️",
     color: "#3D8B8B",
     city: "桃園 → 峴港",
     region: "danang",
     transport: "虎航 IT551",
-    tips: "機加酒已含 Awaken。機場→飯店可 Grab（未含於 Klook）。",
+    tips: "18:10 抵達→入住 Elite→Madame Lân 晚餐。Soạn Hà 19:00 關門，換匯改 Day1 07:15。",
     tourSuggestion: "虎航 16:35–18:10 · 含於機加酒",
   },
   {
@@ -21,7 +21,7 @@ export const DAILY_DETAILS = [
     city: "峴港",
     region: "danang",
     transport: "Klook 09:00 飯店接送（已訂）",
-    tips: "大理石山→山茶白佛→順福橋→占婆博物館→韓市場；13:30 回 Awaken。傍晚龍橋+LoCo。",
+    tips: "07:15 Soạn Hà 換匯→09:00 Klook 一日遊→傍晚龍橋、煎餅晚餐。",
     tourSuggestion: "雙人 NT$1,916",
   },
   {
@@ -45,7 +45,7 @@ export const DAILY_DETAILS = [
     city: "峴港",
     region: "danang",
     transport: "Grab",
-    tips: "山茶/大理石已於昨日一日遊；今日大教堂+海鮮+SPA。",
+    tips: "大教堂→Vincom→按摩→美溪海鮮（My Hanh）；不含市場（韓/Con 已在 Day1/5 分工）。",
     tourSuggestion: "—",
   },
   {
@@ -63,13 +63,13 @@ export const DAILY_DETAILS = [
   {
     day: 5,
     date: "6/16(二)",
-    title: "峴港最後一天 · 整理行李",
-    emoji: "🛍️",
+    title: "峴港在地體驗 · 市場與美食",
+    emoji: "🥖",
     color: "#C8975A",
     city: "峴港",
     region: "danang",
     transport: "Grab",
-    tips: "隔日移防會安。",
+    tips: "Con Market＋美安市場感受在地；Grab 短程、孕婦友善。傍晚按摩後打包。",
     tourSuggestion: "—",
   },
   {
@@ -81,20 +81,20 @@ export const DAILY_DETAILS = [
     city: "峴港 → 會安",
     region: "hoian",
     transport: "Klook 私人接送 NT$340",
-    tips: "Klook 接送入住 Saga。套票 72346 首日啟用；午餐 Firefly 近 Cửa Đại。",
-    tourSuggestion: "Klook 182982 + 72346",
+    tips: "13:00–16:30 套票五點（進記→福建→陶瓷館→歷史博物館→日本橋），17:30 前離古城；18:00 Teh Dar。",
+    tourSuggestion: "182982 + 72346 + Teh Dar #10213",
   },
   {
     day: 7,
     date: "6/18(四)",
-    title: "美山 Klook + 竹籃船",
+    title: "美山 + Thanh Ha 陶藝村",
     emoji: "🛕",
     color: "#4A7C59",
     city: "會安",
     region: "hoian",
     transport: "Klook 美山巴士 + Grab 短程",
-    tips: "08:00–13:30 美山含午餐。下午竹籃船→古城會館→An Bang Purple Lantern 晚餐。",
-    tourSuggestion: "1602 + 24274",
+    tips: "08:00–13:30 美山含午餐。下午 Thanh Ha 陶藝村、福建會館（套票）。",
+    tourSuggestion: "Klook 1602",
   },
   {
     day: 8,
@@ -105,8 +105,8 @@ export const DAILY_DETAILS = [
     city: "會安",
     region: "hoian",
     transport: "Klook 含園區",
-    tips: "週三至週一開放。上午 An Bang→Pause→古城→16:00 印象秀；Non La 燒烤 17:00–20:30（Klook 已含）。",
-    tourSuggestion: "雙人 NT$2,754",
+    tips: "08:30 烹飪課＋錦清市場＋迦南島竹籃船（Klook #136639）。下午 An Bang、燈籠船、17:00 印象秀。",
+    tourSuggestion: "136639 + 17514",
   },
   {
     day: 9,
@@ -123,7 +123,7 @@ export const DAILY_DETAILS = [
 ];
 
 export const CITY_TIMELINE = [
-  { label: "峴港 Awaken", days: "6/11–6/17", color: "#3D8B8B", note: "6 晚" },
+  { label: "峴港 Elite Riverlight", days: "6/11–6/17", color: "#3D8B8B", note: "6 晚 · 海洲" },
   { label: "會安 Saga", days: "6/17–6/20", color: "#D1A153", note: "3 晚 · 古城" },
   { label: "返程", days: "6/20", color: "#5B8DEF", note: "19:00 虎航" },
 ];

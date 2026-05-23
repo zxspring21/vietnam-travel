@@ -5,6 +5,8 @@ import ToursSection from "./components/ToursSection";
 import ExpensesSection from "./components/ExpensesSection";
 import CsvList from "./components/CsvList";
 import FlightHotel from "./components/FlightHotel";
+import SouvenirsSection from "./components/SouvenirsSection";
+import PhotoSetupBanner from "./components/PhotoSetupBanner";
 
 const TABS = [
   ["overview", "🏠 首頁路線"],
@@ -13,6 +15,7 @@ const TABS = [
   ["expenses", "💰 花費"],
   ["csv_list", "🔍 CSV 景點"],
   ["pkg_deal", "✈️ 機票住宿"],
+  ["souvenirs", "🎁 伴手禮"],
 ];
 
 export default function App() {
@@ -28,7 +31,7 @@ export default function App() {
     <div className="app-shell">
       <header className="app-header">
         <h1>🇻🇳 中越蜜月 · 6/11–6/20</h1>
-        <p>已訂虎航+機加酒+Klook · Awaken→Saga · 文字地圖連結</p>
+        <p>Elite Riverlight→Saga · Klook · Google Places 實景照</p>
       </header>
 
       <nav className="app-nav">
@@ -45,12 +48,14 @@ export default function App() {
       </nav>
 
       <main className="app-main">
+        <PhotoSetupBanner />
         {activeSection === "overview" && <HomeOverview onSelectDay={goToDay} />}
         {activeSection === "daily" && <DailyItinerary key={dailyInitialDay} initialDay={dailyInitialDay} />}
         {activeSection === "tours" && <ToursSection />}
         {activeSection === "expenses" && <ExpensesSection />}
         {activeSection === "csv_list" && <CsvList />}
         {activeSection === "pkg_deal" && <FlightHotel />}
+        {activeSection === "souvenirs" && <SouvenirsSection />}
       </main>
     </div>
   );

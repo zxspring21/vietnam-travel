@@ -1,9 +1,124 @@
 /** 自動生成：npm run generate-coords（Places API 或關鍵字猜測） */
 export const CSV_COORDS = {
+  "ellie-s-cafe-hoi-an-healthy-breakfast-brunch-lunch": {
+    "name": "Ellie's Cafe Hoi An - Healthy Breakfast- Brunch- Lunch",
+    "lat": 15.8781898,
+    "lng": 108.3213309
+  },
+  "ti-m-ch-x-u-ch-ngon-h-i-an": {
+    "name": "Tiệm Chè Xíu - Chè Ngon Hội An",
+    "lat": 15.879543,
+    "lng": 108.3239307
+  },
+  "the-center-for-culture-and-sports-of-hoi-an-city": {
+    "name": "The Center for Culture and Sports of Hoi An city",
+    "lat": 15.877734,
+    "lng": 108.3232679
+  },
+  "s-ng-ho-i-square": {
+    "name": "Sông Hoài Square",
+    "lat": 15.8773305,
+    "lng": 108.3233185
+  },
+  "hoi-an-traditional-art-performance-house": {
+    "name": "Hoi An Traditional Art Performance House",
+    "lat": 15.8760971,
+    "lng": 108.3297841
+  },
+  "old-river-restaurant-bar": {
+    "name": "Old River Restaurant - Bar",
+    "lat": 15.8772348,
+    "lng": 108.339432
+  },
+  "restaurant-328": {
+    "name": "Restaurant 328",
+    "lat": 15.8850333,
+    "lng": 108.3493798
+  },
+  "h-i-an-lune-center-for-the-performing-arts": {
+    "name": "Hội An Lune Center for the Performing Arts",
+    "lat": 15.8750879,
+    "lng": 108.3289792
+  },
+  "go-da-nang": {
+    "name": "GO! Da Nang",
+    "lat": 16.0667896,
+    "lng": 108.2135427
+  },
+  "lotte-mart-supermarket": {
+    "name": "Lotte Mart Supermarket",
+    "lat": 16.0348373,
+    "lng": 108.2292584
+  },
+  "vincom-plaza-da-nang": {
+    "name": "Vincom Plaza Da Nang",
+    "lat": 16.0714014,
+    "lng": 108.2299673
+  },
+  "golden-lotus-oriental-organic-spa": {
+    "name": "Golden Lotus Oriental Organic Spa",
+    "lat": 16.0672885,
+    "lng": 108.2445288
+  },
+  "hoa-phu-thanh-tourist-area": {
+    "name": "Hoa Phu Thanh Tourist Area",
+    "lat": 15.9577622,
+    "lng": 107.9916977
+  },
+  "the-saga-hotel-hoi-an": {
+    "name": "THE SAGA HOTEL HOI AN",
+    "lat": 15.8819172,
+    "lng": 108.3454889
+  },
+  "elite-riverlight-hotel-by-elite24": {
+    "name": "Elite Riverlight Hotel by Elite24",
+    "lat": 16.087293,
+    "lng": 108.219485
+  },
+  "phin-cu-coffee": {
+    "name": "Phin Cu Coffee",
+    "lat": 16.0750899,
+    "lng": 108.2420525
+  },
+  "nh-an-vietnamese-local-food-restaurant-and-vegan": {
+    "name": "Nhà An - Vietnamese local food restaurant and vegan",
+    "lat": 16.0749852,
+    "lng": 108.2430715
+  },
+  "non-nuoc-pagoda": {
+    "name": "Non Nuoc Pagoda",
+    "lat": 21.2889444,
+    "lng": 105.8299209
+  },
+  "ba-na-hills-sunworld": {
+    "name": "Ba Na Hills SunWorld",
+    "lat": 16.0265144,
+    "lng": 108.0327972
+  },
+  "the-monkey-mountain": {
+    "name": "The Monkey Mountain",
+    "lat": 16.1159837,
+    "lng": 108.273341
+  },
+  "nh-v-ng-c-nh": {
+    "name": "Nhà Vọng cảnh",
+    "lat": 16.1351089,
+    "lng": 108.2453758
+  },
+  "ph-bi-b-o": {
+    "name": "PHỞ BI BÉO",
+    "lat": 16.068788,
+    "lng": 108.2323226
+  },
+  "moggumeong": {
+    "name": "Moggumeong",
+    "lat": 10.7676271,
+    "lng": 106.6953143
+  },
   "lady-buddha": {
     "name": "Lady Buddha",
-    "lat": 16.0996824,
-    "lng": 108.2769557
+    "lat": 16.0996678,
+    "lng": 108.2769531
   },
   "ph-b-c-63": {
     "name": "PHỞ BẮC 63",
@@ -27,8 +142,8 @@ export const CSV_COORDS = {
   },
   "ba-nh-mi-ba-lan": {
     "name": "Bánh mì Bà Lan",
-    "lat": 16.0596327,
-    "lng": 108.2218006
+    "lat": 16.0587003,
+    "lng": 108.210809
   },
   "天姥寺": {
     "name": "天姥寺",
@@ -55,6 +170,11 @@ export const CSV_COORDS = {
     "lat": 16.2,
     "lng": 108.133333
   },
+  "海雲關-35": {
+    "name": "海雲關",
+    "lat": 16.2,
+    "lng": 108.133333
+  },
   "b-nh-m-sum": {
     "name": "Bánh Mì Sum",
     "lat": 15.8797382,
@@ -62,8 +182,8 @@ export const CSV_COORDS = {
   },
   "c-ng-c-ph": {
     "name": "Cộng Cà Phê",
-    "lat": 10.7782314,
-    "lng": 106.7010998
+    "lat": 25.0459017,
+    "lng": 121.5138286
   },
   "hoi-an-lantern-boat-tour": {
     "name": "Hoi An Lantern Boat Tour ( 호이안 랜턴 보트 투어 )",
@@ -105,10 +225,10 @@ export const CSV_COORDS = {
     "lat": 16.0570832,
     "lng": 108.245463
   },
-  "c-ng-c-ph-22": {
+  "c-ng-c-ph-46": {
     "name": "Cộng Cà Phê",
-    "lat": 10.7782314,
-    "lng": 106.7010998
+    "lat": 25.0459017,
+    "lng": 121.5138286
   },
   "dragon-bridge": {
     "name": "Dragon Bridge",
@@ -172,8 +292,8 @@ export const CSV_COORDS = {
   },
   "sake-restaurant": {
     "name": "Sake Restaurant",
-    "lat": 10.7731489,
-    "lng": 106.7040912
+    "lat": 16.4689171,
+    "lng": 107.5978018
   },
   "hue-imperial-city": {
     "name": "Hue Imperial City",
@@ -380,11 +500,6 @@ export const CSV_COORDS = {
     "lat": 15.8774847,
     "lng": 108.3306281
   },
-  "靈應寺": {
-    "name": "靈應寺",
-    "lat": 16.0039557,
-    "lng": 108.2637181
-  },
   "my-son-sanctuary": {
     "name": "My Son Sanctuary",
     "lat": 15.7687821,
@@ -469,6 +584,16 @@ export const CSV_COORDS = {
     "name": "Han Market",
     "lat": 16.0680836,
     "lng": 108.224069
+  },
+  "museum-of-trade-ceramics": {
+    "name": "Museum of Trade Ceramics",
+    "lat": 15.8772894,
+    "lng": 108.3295509
+  },
+  "hoi-an-museum": {
+    "name": "Hoi An Museum",
+    "lat": 15.8771398,
+    "lng": 108.3342634
   }
 };
 

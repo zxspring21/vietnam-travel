@@ -9,6 +9,7 @@ const TYPE_COLORS = {
   景點: "#7B5EA7",
   美食: "#DE7A32",
   購物: "#C8975A",
+  伴手禮: "#DE7A32",
   住宿: "#5B8DEF",
   交通: "#3D8B8B",
   體驗: "#4A7C59",
@@ -59,7 +60,7 @@ export default function HomeOverview({ onSelectDay }) {
             </a>
             ：雙人 NT${PACKAGE_BOOKING.coupleTotal.toLocaleString()} · {FLIGHT_BOOKING.outbound.time} / {FLIGHT_BOOKING.inbound.time}
           </li>
-          <li style={{ opacity: 0.85 }}>Awaken 6/11–17 · Saga 6/17–20 · {FLIGHT_BOOKING.baggage}</li>
+          <li style={{ opacity: 0.85 }}>Elite Riverlight 6/11–17 · Saga 6/17–20 · {FLIGHT_BOOKING.baggage}</li>
         </ul>
         <ul style={{ margin: "12px 0 0", paddingLeft: "20px", lineHeight: 1.8, fontSize: "14px" }}>
           {KLOOK_BOOKINGS.map((b) => (

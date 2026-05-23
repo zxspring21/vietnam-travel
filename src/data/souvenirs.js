@@ -1,0 +1,168 @@
+/**
+ * 伴手禮必買 10 選 — 價格為峴港超市/市場常見區間（VND → 約 TWD 粗算 ÷1300）
+ * 輕量採購：隨行程於市場順買即可（Day5 為文化市場日，非超市專線）
+ */
+export const SOUVENIR_SHOPPING_DAYS = [
+  { day: 1, date: "6/12", places: ["Han Market"], note: "Klook 一日遊含韓市場" },
+  { day: 5, date: "6/16", places: ["Con Market", "Bac My An Market"], note: "體驗為主，可少量順買" },
+];
+
+export const SOUVENIR_CATEGORIES = [
+  {
+    id: "candy",
+    label: "糖果・巧克力",
+    items: ["coconut-candy", "first-street", "marou"],
+  },
+  {
+    id: "coffee",
+    label: "咖啡",
+    items: ["mr-viet", "g7", "trung-nguyen"],
+  },
+  {
+    id: "snack",
+    label: "點心",
+    items: ["green-bean", "durian-cake", "tipo"],
+  },
+  {
+    id: "nuts",
+    label: "堅果・果乾",
+    items: ["cashew", "vinamit-dried"],
+  },
+  {
+    id: "seasoning",
+    label: "調味",
+    items: ["pepper"],
+  },
+];
+
+/** @type {Array<{id:string,name:string,brand:string,category:string,priceVnd:string,priceTwdHint:string,where:string,reason:string,buyTip:string}>} */
+export const TOP10_SOUVENIRS = [
+  {
+    id: "coconut-candy",
+    name: "椰子糖",
+    brand: "Ben Tre / 各地牌椰子軟糖",
+    category: "糖果",
+    priceVnd: "30,000–50,000 / 袋",
+    priceTwdHint: "約 NT$25–40",
+    where: "Lotte Mart、GO!、Han Market",
+    reason: "越南最具代表性的甜味伴手禮，不佔行李、不易碎，送同事親友最安全。",
+    buyTip: "選獨立小包裝，避免高溫融化黏袋。",
+    photoAt: "GO! Da Nang",
+  },
+  {
+    id: "marou",
+    name: "MAROU 巧克力",
+    brand: "MAROU（越南產地豆單品）",
+    category: "巧克力",
+    priceVnd: "80,000–150,000 / 板",
+    priceTwdHint: "約 NT$60–120",
+    where: "Vincom Plaza、Lotte Mart 進口區",
+    reason: "越南少數國際知名的精品巧克力，包裝體面，比通用觀光巧克力更有話題。",
+    buyTip: "優先選 70% 以上黑巧或限定產地標示（Tien Giang 等）。",
+    photoAt: "Vincom Plaza Da Nang",
+  },
+  {
+    id: "g7",
+    name: "G7 三合一咖啡",
+    brand: "Trung Nguyên G7",
+    category: "咖啡",
+    priceVnd: "50,000–90,000 / 盒（18–30包）",
+    priceTwdHint: "約 NT$40–70",
+    where: "GO!、Lotte Mart（最常見、最便宜）",
+    reason: "越南國民速溶咖啡，價格最親民、口味穩定，適合大量分送。",
+    buyTip: "比超市散裝更建議買整盒，效期與封口較佳。",
+    photoAt: "Lotte Mart Supermarket",
+  },
+  {
+    id: "trung-nguyen",
+    name: "中原傳奇咖啡",
+    brand: "Trung Nguyên Legend",
+    category: "咖啡",
+    priceVnd: "120,000–250,000 / 禮盒",
+    priceTwdHint: "約 NT$90–190",
+    where: "Vincom、Lotte Mart",
+    reason: "禮盒版質感較 G7 高，適合送長輩或當主禮，仍比台灣精品咖啡便宜。",
+    buyTip: "可選滴濾掛耳組合，比三合一少甜、較像精品伴手禮。",
+    photoAt: "Vincom Plaza Da Nang",
+  },
+  {
+    id: "mr-viet",
+    name: "MR.VIET 咖啡",
+    brand: "MR.VIET",
+    category: "咖啡",
+    priceVnd: "150,000–280,000 / 禮盒",
+    priceTwdHint: "約 NT$115–215",
+    where: "Vincom Plaza、機場也可補買",
+    reason: "包裝現代、偏文青伴手禮路線，適合年輕朋友；風味介於精品與速溶之間。",
+    buyTip: "若預算有限，可只買掛耳小包組合。",
+    photoAt: "Vincom Plaza Da Nang",
+  },
+  {
+    id: "green-bean",
+    name: "綠豆糕",
+    brand: "各地糕餅坊 / 市場現包",
+    category: "點心",
+    priceVnd: "25,000–45,000 / 盒",
+    priceTwdHint: "約 NT$20–35",
+    where: "Han Market、Con Market",
+    reason: "順化/中部傳統點心，口感綿密不油，比餅乾耐放，長輩接受度高。",
+    buyTip: "選真空或硬盒裝，避免壓碎。",
+    photoAt: "Han Market",
+  },
+  {
+    id: "durian-cake",
+    name: "榴槤餅",
+    brand: "Banh Pia 品牌（如 Tan Hue Vien 系）",
+    category: "點心",
+    priceVnd: "40,000–80,000 / 盒（6–10入）",
+    priceTwdHint: "約 NT$30–60",
+    where: "Con Market、Lotte Mart",
+    reason: "越南經典觀光伴手禮，味道辨識度高；愛榴槤者會很開心。",
+    buyTip: "若不確定收件者喜好，改買「綜合口味」盒較安全。",
+    photoAt: "Con Market",
+  },
+  {
+    id: "cashew",
+    name: "越南腰果",
+    brand: "Vinamit / 現烤攤牌",
+    category: "堅果",
+    priceVnd: "100,000–200,000 / 500g",
+    priceTwdHint: "約 NT$75–150",
+    where: "Lotte Mart、GO!、Con Market",
+    reason: "峴港/中部為腰果產區，現地價格常比台灣超市划算，鹽焗或蜂蜜都適合分裝。",
+    buyTip: "選密封拉鍊袋，回台可再分小袋。",
+    photoAt: "Lotte Mart Supermarket",
+  },
+  {
+    id: "vinamit-dried",
+    name: "Vinamit 水果乾",
+    brand: "Vinamit（芒果／香蕉）",
+    category: "果乾",
+    priceVnd: "45,000–75,000 / 包",
+    priceTwdHint: "約 NT$35–58",
+    where: "Lotte Mart、GO!",
+    reason: "品牌通路穩定，品質比路邊攤可控，芒果乾是最不容易踩雷的口味。",
+    buyTip: "對照成分表，少糖版本較適合當健康伴手禮。",
+    photoAt: "Lotte Mart Supermarket",
+  },
+  {
+    id: "pepper",
+    name: "越南胡椒",
+    brand: "Phú Quốc / 中部現磨胡椒粒",
+    category: "調味",
+    priceVnd: "60,000–120,000 / 100–200g",
+    priceTwdHint: "約 NT$45–90",
+    where: "Han Market、Con Market調味攤",
+    reason: "越南為重要胡椒產地，香氣比台灣超市平價胡椒鮮，料理愛好者會實用。",
+    buyTip: "買「整粒」而非已磨粉，香氣保存較久；需申報液體/粉末海關規定時留意。",
+    photoAt: "Han Market",
+  },
+];
+
+/** 清單有但未入 Top10 的備選說明 */
+export const SOUVENIR_ALTERNATES = [
+  { name: "第一排糖", note: "觀光區常見，口味像硬糖綜合包，可當零嘴但辨識度不如椰子糖/MAROU。" },
+  { name: "松鼠牌、ARCHCAFE", note: "超市有售，屬第二梯隊；若 G7、Legend 已買可略過。" },
+  { name: "Banhdua 椰子餅乾、Tipo", note: "適合自己吃，送禮質感略輸 MAROU／榴槤餅。" },
+  { name: "富國島花生、魚露粉、蝦鹽", note: "魚露/蝦鹽味道重、液態限制多；花生可改買腰果即可。" },
+];

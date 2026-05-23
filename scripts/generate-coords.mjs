@@ -43,6 +43,8 @@ const KNOWN = [
   [/lady buddha|觀音|linh ứng|靈應/i, { lat: 16.1, lng: 108.2775 }],
   [/my son|美山/i, { lat: 15.7644, lng: 108.1247 }],
   [/thanh ha|陶瓷/i, { lat: 15.878, lng: 108.345 }],
+  [/museum of trade ceramics|陶瓷貿易/i, { lat: 15.8771, lng: 108.3284 }],
+  [/hoi an museum|歷史文化博物館/i, { lat: 15.8778, lng: 108.3268 }],
   [/six on six/i, { lat: 16.055, lng: 108.215 }],
   [/tiệm vàng|soạn hà|換匯/i, { lat: 15.8792, lng: 108.3298 }],
   [/beach|沙灘|esco/i, { lat: 16.052, lng: 108.248 }],

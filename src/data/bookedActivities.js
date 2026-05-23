@@ -17,12 +17,12 @@ export const PACKAGE_BOOKING = {
   includesFlights: true,
   url: "https://tw.trip.com/packages/list?departurecity=台北&arrivalcity=峴港",
   segments: [
-    { from: "6/11", to: "6/17", hotel: "danangMain", note: "Awaken Danang Hotel" },
+    { from: "6/11", to: "6/17", hotel: "danangMain", note: "Elite Riverlight Hotel by Elite24" },
     { from: "6/17", to: "6/20", hotel: "hoiAn", note: "THE SAGA HOTEL HOI AN" },
   ],
 };
 
-/** @type {Array<{id:string, name:string, platform:string, url:string, coupleTwd:number, days:number[], coversTransport:boolean, note:string}>} */
+/** @type {Array<{id:string, name:string, platform:string, url:string, coupleTwd:number, perPersonTwd?:number, days:number[], linkDays?:number[], coversTransport:boolean, note:string, stops?:Array}>} */
 export const KLOOK_BOOKINGS = [
   {
     id: "dad-day-1573",
@@ -35,7 +35,7 @@ export const KLOOK_BOOKINGS = [
     coversTransport: true,
     note: "09:00 飯店接送 · 13:30 回飯店 · 2 人",
     stops: [
-      { label: "努諾可石雕", csvName: null },
+      { label: "努諾可石雕", csvName: "Non Nuoc Pagoda" },
       { label: "大理石山售票亭（五行山）", csvName: "The Marble Mountains", detail: "舍利塔、靈應一寺、唐鐘洞" },
       { label: "峴港靈應寺·白佛觀音像（山茶半島）", csvName: "Chùa Linh Ứng", detail: "Bai But / Lady Buddha 一帶" },
       { label: "順福橋", csvName: null, detail: "Thuan Phuoc Bridge" },
@@ -60,6 +60,7 @@ export const KLOOK_BOOKINGS = [
     platform: "Klook",
     url: "https://www.klook.com/zh-TW/activity/4808-hue-day-tour-da-nang/",
     coupleTwd: 2550,
+    perPersonTwd: 1275,
     days: [4],
     coversTransport: true,
     note: "2 人 · 含往返交通與行程",
@@ -70,6 +71,7 @@ export const KLOOK_BOOKINGS = [
     platform: "Klook",
     url: "https://www.klook.com/zh-TW/activity/1602-my-son-discovery-hoi-an/",
     coupleTwd: 748,
+    perPersonTwd: 374,
     days: [7],
     coversTransport: true,
     note: "11:30 廣南麵午餐 · 13:30 回飯店",
@@ -80,6 +82,7 @@ export const KLOOK_BOOKINGS = [
     platform: "Klook",
     url: "https://www.klook.com/zh-TW/activity/17514-hoi-an-memories-show-ticket/",
     coupleTwd: 2754,
+    perPersonTwd: 1377,
     days: [8],
     coversTransport: true,
     note: "週三至週一開放 · Non La 燒烤自助 17:00–20:30",
@@ -105,14 +108,31 @@ export const KLOOK_BOOKINGS = [
     note: "2 人 · 若需先回峴港再赴機場",
   },
   {
-    id: "basket-24274",
-    name: "會安椰林竹籃船體驗",
+    id: "cooking-136639",
+    name: "越南料理烹飪課＋市場導覽＋椰子林竹籃船",
     platform: "Klook",
-    url: "https://www.klook.com/zh-TW/activity/24274-basket-boat-ticket-hoi-an-coconut-forest/",
-    coupleTwd: 296,
-    days: [7],
+    url: "https://www.klook.com/zh-TW/activity/136639-coconut-forest-basket-boat-cooking-class-hoian/",
+    coupleTwd: 551 * 2,
+    perPersonTwd: 551,
+    days: [8],
+    coversTransport: true,
+    note: "08:30 飯店接送 · 錦清市場→迦南島椰子林→烹飪課",
+    stops: [
+      { label: "錦清當地市場", csvName: null },
+      { label: "水椰林迦南島 Cam Thanh", csvName: null, detail: "Bay Mau 椰子林" },
+      { label: "竹籃船＋烹飪課程", csvName: null },
+    ],
+  },
+  {
+    id: "teh-dar-10213",
+    name: "會安 Teh Dar 西貢歌劇院演出",
+    platform: "Klook",
+    url: "https://www.klook.com/zh-TW/activity/10213-teh-dar-show-ticket-hoi-an/",
+    coupleTwd: 834 * 2,
+    perPersonTwd: 834,
+    days: [6],
     coversTransport: false,
-    note: "2 人 · 古城旁 Grab 短程",
+    note: "18:00–19:00 · 17:30 到場取票＋迎賓飲品",
   },
   {
     id: "pass-72346",
@@ -120,14 +140,14 @@ export const KLOOK_BOOKINGS = [
     platform: "Klook",
     url: "https://www.klook.com/zh-TW/activity/72346-hoi-an-ancient-town-attractions-adminssion-ticket/",
     coupleTwd: 312,
+    perPersonTwd: 156,
     days: [6, 7, 8],
     linkDays: [6],
     coversTransport: false,
-    note: "2 人 · 五景點（6/17–6/19 分散使用）",
+    note: "2 人 · 每人 5 景點 · 見 hoiAnAncientPass.js 建議",
   },
 ];
 
-/** 當日行程側欄顯示的 Klook（套票僅在首日列出，避免重複） */
 export function getBookingsForDay(day) {
   return KLOOK_BOOKINGS.filter((b) => {
     if (!b.days.includes(day)) return false;
@@ -136,7 +156,6 @@ export function getBookingsForDay(day) {
   });
 }
 
-/** 全表核對用：每個 activityId 僅一筆 */
 export const KLOOK_BY_ACTIVITY_ID = {
   1573: KLOOK_BOOKINGS[0],
   13283: KLOOK_BOOKINGS[1],
@@ -144,8 +163,9 @@ export const KLOOK_BY_ACTIVITY_ID = {
   1602: KLOOK_BOOKINGS[3],
   17514: KLOOK_BOOKINGS[4],
   182982: KLOOK_BOOKINGS[5],
-  24274: KLOOK_BOOKINGS[6],
-  72346: KLOOK_BOOKINGS[7],
+  136639: KLOOK_BOOKINGS[7],
+  10213: KLOOK_BOOKINGS[8],
+  72346: KLOOK_BOOKINGS[9],
 };
 
 export function getKlookBooking(id) {
