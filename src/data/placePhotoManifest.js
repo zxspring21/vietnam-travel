@@ -1,14 +1,94 @@
 /** 自動生成：npm run fetch-photos — 每站最多 3 張本機 jpg */
 export const PLACE_PHOTO_MANIFEST = {
+  "ellie-s-cafe-hoi-an-healthy-breakfast-brunch-lunch": [
+    "/place-photos/ellie-s-cafe-hoi-an-healthy-breakfast-brunch-lunch-1.jpg",
+    "/place-photos/ellie-s-cafe-hoi-an-healthy-breakfast-brunch-lunch-2.jpg",
+    "/place-photos/ellie-s-cafe-hoi-an-healthy-breakfast-brunch-lunch-3.jpg"
+  ],
+  "Ellie's Cafe Hoi An - Healthy Breakfast- Brunch- Lunch": [
+    "/place-photos/ellie-s-cafe-hoi-an-healthy-breakfast-brunch-lunch-1.jpg",
+    "/place-photos/ellie-s-cafe-hoi-an-healthy-breakfast-brunch-lunch-2.jpg",
+    "/place-photos/ellie-s-cafe-hoi-an-healthy-breakfast-brunch-lunch-3.jpg"
+  ],
+  "ti-m-ch-x-u-ch-ngon-h-i-an": [
+    "/place-photos/ti-m-ch-x-u-ch-ngon-h-i-an-1.jpg",
+    "/place-photos/ti-m-ch-x-u-ch-ngon-h-i-an-2.jpg",
+    "/place-photos/ti-m-ch-x-u-ch-ngon-h-i-an-3.jpg"
+  ],
+  "Tiệm Chè Xíu - Chè Ngon Hội An": [
+    "/place-photos/ti-m-ch-x-u-ch-ngon-h-i-an-1.jpg",
+    "/place-photos/ti-m-ch-x-u-ch-ngon-h-i-an-2.jpg",
+    "/place-photos/ti-m-ch-x-u-ch-ngon-h-i-an-3.jpg"
+  ],
+  "the-center-for-culture-and-sports-of-hoi-an-city": [
+    "/place-photos/the-center-for-culture-and-sports-of-hoi-an-city-1.jpg",
+    "/place-photos/the-center-for-culture-and-sports-of-hoi-an-city-2.jpg",
+    "/place-photos/the-center-for-culture-and-sports-of-hoi-an-city-3.jpg"
+  ],
+  "The Center for Culture and Sports of Hoi An city": [
+    "/place-photos/the-center-for-culture-and-sports-of-hoi-an-city-1.jpg",
+    "/place-photos/the-center-for-culture-and-sports-of-hoi-an-city-2.jpg",
+    "/place-photos/the-center-for-culture-and-sports-of-hoi-an-city-3.jpg"
+  ],
+  "s-ng-ho-i-square": [
+    "/place-photos/s-ng-ho-i-square-1.jpg",
+    "/place-photos/s-ng-ho-i-square-2.jpg",
+    "/place-photos/s-ng-ho-i-square-3.jpg"
+  ],
+  "Sông Hoài Square": [
+    "/place-photos/s-ng-ho-i-square-1.jpg",
+    "/place-photos/s-ng-ho-i-square-2.jpg",
+    "/place-photos/s-ng-ho-i-square-3.jpg"
+  ],
+  "hoi-an-traditional-art-performance-house": [
+    "/place-photos/hoi-an-traditional-art-performance-house-1.jpg",
+    "/place-photos/hoi-an-traditional-art-performance-house-2.jpg",
+    "/place-photos/hoi-an-traditional-art-performance-house-3.jpg"
+  ],
+  "Hoi An Traditional Art Performance House": [
+    "/place-photos/hoi-an-traditional-art-performance-house-1.jpg",
+    "/place-photos/hoi-an-traditional-art-performance-house-2.jpg",
+    "/place-photos/hoi-an-traditional-art-performance-house-3.jpg"
+  ],
+  "old-river-restaurant-bar": [
+    "/place-photos/old-river-restaurant-bar-1.jpg",
+    "/place-photos/old-river-restaurant-bar-2.jpg",
+    "/place-photos/old-river-restaurant-bar-3.jpg"
+  ],
+  "Old River Restaurant - Bar": [
+    "/place-photos/old-river-restaurant-bar-1.jpg",
+    "/place-photos/old-river-restaurant-bar-2.jpg",
+    "/place-photos/old-river-restaurant-bar-3.jpg"
+  ],
+  "restaurant-328": [
+    "/place-photos/restaurant-328-1.jpg",
+    "/place-photos/restaurant-328-2.jpg",
+    "/place-photos/restaurant-328-3.jpg"
+  ],
+  "Restaurant 328": [
+    "/place-photos/restaurant-328-1.jpg",
+    "/place-photos/restaurant-328-2.jpg",
+    "/place-photos/restaurant-328-3.jpg"
+  ],
+  "h-i-an-lune-center-for-the-performing-arts": [
+    "/place-photos/h-i-an-lune-center-for-the-performing-arts-1.jpg",
+    "/place-photos/h-i-an-lune-center-for-the-performing-arts-2.jpg",
+    "/place-photos/h-i-an-lune-center-for-the-performing-arts-3.jpg"
+  ],
+  "Hội An Lune Center for the Performing Arts": [
+    "/place-photos/h-i-an-lune-center-for-the-performing-arts-1.jpg",
+    "/place-photos/h-i-an-lune-center-for-the-performing-arts-2.jpg",
+    "/place-photos/h-i-an-lune-center-for-the-performing-arts-3.jpg"
+  ],
   "go-da-nang": [
     "/place-photos/go-da-nang-1.jpg",
     "/place-photos/go-da-nang-2.jpg",
     "/place-photos/go-da-nang-3.jpg"
   ],
   "GO! Da Nang": [
-    "/place-photos/souvenir-GO--Da-Nang-1.jpg",
-    "/place-photos/souvenir-GO--Da-Nang-2.jpg",
-    "/place-photos/souvenir-GO--Da-Nang-3.jpg"
+    "/place-photos/go-da-nang-1.jpg",
+    "/place-photos/go-da-nang-2.jpg",
+    "/place-photos/go-da-nang-3.jpg"
   ],
   "lotte-mart-supermarket": [
     "/place-photos/lotte-mart-supermarket-1.jpg",
@@ -16,9 +96,9 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/lotte-mart-supermarket-3.jpg"
   ],
   "Lotte Mart Supermarket": [
-    "/place-photos/souvenir-Lotte-Mart-Supermarket-1.jpg",
-    "/place-photos/souvenir-Lotte-Mart-Supermarket-2.jpg",
-    "/place-photos/souvenir-Lotte-Mart-Supermarket-3.jpg"
+    "/place-photos/lotte-mart-supermarket-1.jpg",
+    "/place-photos/lotte-mart-supermarket-2.jpg",
+    "/place-photos/lotte-mart-supermarket-3.jpg"
   ],
   "vincom-plaza-da-nang": [
     "/place-photos/vincom-plaza-da-nang-1.jpg",
@@ -26,9 +106,9 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/vincom-plaza-da-nang-3.jpg"
   ],
   "Vincom Plaza Da Nang": [
-    "/place-photos/souvenir-Vincom-Plaza-Da-Nang-1.jpg",
-    "/place-photos/souvenir-Vincom-Plaza-Da-Nang-2.jpg",
-    "/place-photos/souvenir-Vincom-Plaza-Da-Nang-3.jpg"
+    "/place-photos/vincom-plaza-da-nang-1.jpg",
+    "/place-photos/vincom-plaza-da-nang-2.jpg",
+    "/place-photos/vincom-plaza-da-nang-3.jpg"
   ],
   "golden-lotus-oriental-organic-spa": [
     "/place-photos/golden-lotus-oriental-organic-spa-1.jpg",
@@ -241,14 +321,14 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/----3.jpg"
   ],
   "海雲關": [
-    "/place-photos/----27-1.jpg",
-    "/place-photos/----27-2.jpg",
-    "/place-photos/----27-3.jpg"
+    "/place-photos/----35-1.jpg",
+    "/place-photos/----35-2.jpg",
+    "/place-photos/----35-3.jpg"
   ],
-  "海雲關-27": [
-    "/place-photos/----27-1.jpg",
-    "/place-photos/----27-2.jpg",
-    "/place-photos/----27-3.jpg"
+  "海雲關-35": [
+    "/place-photos/----35-1.jpg",
+    "/place-photos/----35-2.jpg",
+    "/place-photos/----35-3.jpg"
   ],
   "b-nh-m-sum": [
     "/place-photos/b-nh-m-sum-1.jpg",
@@ -266,9 +346,9 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/c-ng-c-ph-3.jpg"
   ],
   "Cộng Cà Phê": [
-    "/place-photos/c-ng-c-ph-38-1.jpg",
-    "/place-photos/c-ng-c-ph-38-2.jpg",
-    "/place-photos/c-ng-c-ph-38-3.jpg"
+    "/place-photos/c-ng-c-ph-46-1.jpg",
+    "/place-photos/c-ng-c-ph-46-2.jpg",
+    "/place-photos/c-ng-c-ph-46-3.jpg"
   ],
   "hoi-an-lantern-boat-tour": [
     "/place-photos/hoi-an-lantern-boat-tour-1.jpg",
@@ -340,10 +420,10 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/th-m-h-i-s-n-2.jpg",
     "/place-photos/th-m-h-i-s-n-3.jpg"
   ],
-  "c-ng-c-ph-38": [
-    "/place-photos/c-ng-c-ph-38-1.jpg",
-    "/place-photos/c-ng-c-ph-38-2.jpg",
-    "/place-photos/c-ng-c-ph-38-3.jpg"
+  "c-ng-c-ph-46": [
+    "/place-photos/c-ng-c-ph-46-1.jpg",
+    "/place-photos/c-ng-c-ph-46-2.jpg",
+    "/place-photos/c-ng-c-ph-46-3.jpg"
   ],
   "dragon-bridge": [
     "/place-photos/dragon-bridge-1.jpg",
@@ -651,9 +731,9 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/bac-my-an-market-3.jpg"
   ],
   "Bac My An Market": [
-    "/place-photos/bac-my-an-market-1.jpg",
-    "/place-photos/bac-my-an-market-2.jpg",
-    "/place-photos/bac-my-an-market-3.jpg"
+    "/place-photos/souvenir-Bac-My-An-Market-1.jpg",
+    "/place-photos/souvenir-Bac-My-An-Market-2.jpg",
+    "/place-photos/souvenir-Bac-My-An-Market-3.jpg"
   ],
   "con-market": [
     "/place-photos/con-market-1.jpg",
@@ -661,9 +741,9 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/con-market-3.jpg"
   ],
   "Con Market": [
-    "/place-photos/con-market-1.jpg",
-    "/place-photos/con-market-2.jpg",
-    "/place-photos/con-market-3.jpg"
+    "/place-photos/souvenir-Con-Market-1.jpg",
+    "/place-photos/souvenir-Con-Market-2.jpg",
+    "/place-photos/souvenir-Con-Market-3.jpg"
   ],
   "棋盤頂": [
     "/place-photos/----1.jpg",
@@ -1001,9 +1081,29 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/han-market-3.jpg"
   ],
   "Han Market": [
-    "/place-photos/han-market-1.jpg",
-    "/place-photos/han-market-2.jpg",
-    "/place-photos/han-market-3.jpg"
+    "/place-photos/souvenir-Han-Market-1.jpg",
+    "/place-photos/souvenir-Han-Market-2.jpg",
+    "/place-photos/souvenir-Han-Market-3.jpg"
+  ],
+  "museum-of-folk-culture": [
+    "/place-photos/museum-of-folk-culture-1.jpg",
+    "/place-photos/museum-of-folk-culture-2.jpg",
+    "/place-photos/museum-of-folk-culture-3.jpg"
+  ],
+  "Museum of Folk Culture": [
+    "/place-photos/museum-of-folk-culture-1.jpg",
+    "/place-photos/museum-of-folk-culture-2.jpg",
+    "/place-photos/museum-of-folk-culture-3.jpg"
+  ],
+  "hoi-an-museum": [
+    "/place-photos/hoi-an-museum-1.jpg",
+    "/place-photos/hoi-an-museum-2.jpg",
+    "/place-photos/hoi-an-museum-3.jpg"
+  ],
+  "Hoi An Museum": [
+    "/place-photos/hoi-an-museum-1.jpg",
+    "/place-photos/hoi-an-museum-2.jpg",
+    "/place-photos/hoi-an-museum-3.jpg"
   ],
   "hotel-danangMain": [
     "/place-photos/hotel-danangMain-1.jpg",
@@ -1015,20 +1115,20 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/hotel-hoiAn-2.jpg",
     "/place-photos/hotel-hoiAn-3.jpg"
   ],
-  "souvenir-Lotte Mart Supermarket": [
-    "/place-photos/souvenir-Lotte-Mart-Supermarket-1.jpg",
-    "/place-photos/souvenir-Lotte-Mart-Supermarket-2.jpg",
-    "/place-photos/souvenir-Lotte-Mart-Supermarket-3.jpg"
+  "souvenir-Han Market": [
+    "/place-photos/souvenir-Han-Market-1.jpg",
+    "/place-photos/souvenir-Han-Market-2.jpg",
+    "/place-photos/souvenir-Han-Market-3.jpg"
   ],
-  "souvenir-GO! Da Nang": [
-    "/place-photos/souvenir-GO--Da-Nang-1.jpg",
-    "/place-photos/souvenir-GO--Da-Nang-2.jpg",
-    "/place-photos/souvenir-GO--Da-Nang-3.jpg"
+  "souvenir-Con Market": [
+    "/place-photos/souvenir-Con-Market-1.jpg",
+    "/place-photos/souvenir-Con-Market-2.jpg",
+    "/place-photos/souvenir-Con-Market-3.jpg"
   ],
-  "souvenir-Vincom Plaza Da Nang": [
-    "/place-photos/souvenir-Vincom-Plaza-Da-Nang-1.jpg",
-    "/place-photos/souvenir-Vincom-Plaza-Da-Nang-2.jpg",
-    "/place-photos/souvenir-Vincom-Plaza-Da-Nang-3.jpg"
+  "souvenir-Bac My An Market": [
+    "/place-photos/souvenir-Bac-My-An-Market-1.jpg",
+    "/place-photos/souvenir-Bac-My-An-Market-2.jpg",
+    "/place-photos/souvenir-Bac-My-An-Market-3.jpg"
   ],
   "souvenir-item-coconut-candy": [
     "/place-photos/souvenir-item-coconut-candy-1.jpg",

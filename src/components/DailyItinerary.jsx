@@ -72,6 +72,7 @@ export default function DailyItinerary({ initialDay = 0 }) {
 
         {safeDay === 0 && <ExchangeTip day={0} />}
         {safeDay === 1 && <ExchangeTip day={1} />}
+        {safeDay === 3 && <ExchangeTip day={3} />}
         {safeDay === 6 && <HoiAnPassPanel />}
 
         {transportInfo && (

@@ -932,10 +932,10 @@ export const CSV_PLACES = [
     "tags": []
   },
   {
-    "id": "museum-of-trade-ceramics",
-    "name": "Museum of Trade Ceramics",
-    "note": "陶瓷貿易博物館·套票 80 Trần Phú",
-    "url": "https://www.google.com/maps/search/?api=1&query_place_id=ChIJ6-ee-34OQjERHuaiqzF9c8s",
+    "id": "museum-of-folk-culture",
+    "name": "Museum of Folk Culture",
+    "note": "民俗博物館·套票",
+    "url": "https://www.google.com/maps/search/?api=1&query_place_id=ChIJw98dVX4OQjERej9X9vb0XWs",
     "tags": []
   },
   {

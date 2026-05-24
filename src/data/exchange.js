@@ -6,32 +6,28 @@ export const EXCHANGE_ADVICE = {
     name: "Tiệm Vàng Soạn Hà",
     csvName: "Tiệm Vàng Soạn Hà",
     scheduledDay: 1,
-    scheduledTime: "07:15",
+    scheduledTime: "09:00",
     hours: SOAN_HA_HOURS.label,
-    note: "正式行程排 Day 1 早上（09:00 Klook 出發前）。",
+    note: "Day 1（6/12）休閒日 09:00 換匯，不與 Klook 搶早上。",
+  },
+  itinerarySwap: {
+    summary:
+      "已將原 Day1 峴港一日遊改排 Day 3（6/14），原 Day3 休閒改 Day 1，方便首日換匯。",
+    klookWarning:
+      "若 Klook #1573 訂單日期仍為 6/12，請在 Klook 改期至 6/14，或把 App 內 Day 3 當作實際出團日。",
   },
   arrivalPlan: {
     flightLand: "18:10",
     carryOnOnly: true,
     soanHaCloses: "19:00",
-    verdict: "當晚抵達後不建議賭 Soạn Hà",
-    reasoning: [
-      "僅随身行李約 15–25 分鐘出關，Grab 機場→海洲約 20–30 分鐘。",
-      "順利也要 18:45–19:10 才到，與 19:00 打烊重疊或已關。",
-      "下機直衝換匯風險高；建議機場只換極少量或刷卡，大額 Day1 07:15 處理。",
-    ],
-    planB: {
-      label: "極樂觀情況（不建議當主計畫）",
-      steps: "18:10 落地 → 18:25 出關 → Grab 直達 Soạn Hà（不先回飯店）→ 19:00 前完成",
-      risk: "班機延誤、入境排隊、晚高峰 Grab 一項就來不及。",
-    },
-    day0Instead: "Day 0：機場 Grab → Elite 入住 → Madame Lân 晚餐（同海洲區）。",
+    verdict: "當晚不必換匯",
+    day0Instead: "Day 0：機場 → Elite 入住 → Madame Lân 晚餐。大額換匯留 Day 1 09:00。",
   },
   earlyOptions: [
     {
-      label: "峴港漢市場 Han Market 周邊",
-      day: 1,
-      note: "Klook 一日遊 13:00 含韓市場，可順便比價小額。",
+      label: "峴港漢市場 Han Market",
+      day: 3,
+      note: "Klook 一日遊（Day 3）含韓市場，可順便比價小額。",
     },
     {
       label: "機場兌換",
@@ -40,5 +36,5 @@ export const EXCHANGE_ADVICE = {
     },
   ],
   summary:
-    "Soạn Hà 19:00 關門，IT551 18:10 抵達當晚幾乎來不及。Day 1 07:15 換匯最穩；Day 0 先入住吃飯。",
+    "抵達日晚只入住吃飯；Day 1 09:00 Soạn Hà 換匯（休閒日）。Klook 峴港團在 Day 3。",
 };

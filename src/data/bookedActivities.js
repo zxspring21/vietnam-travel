@@ -31,9 +31,9 @@ export const KLOOK_BOOKINGS = [
     url: "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/",
     coupleTwd: 1916,
     perPersonTwd: 958,
-    days: [1],
+    days: [3],
     coversTransport: true,
-    note: "09:00 飯店接送 · 13:30 回飯店 · 2 人",
+    note: "09:00 飯店接送 · 13:30 回飯店 · 行程排 Day 3（6/14）— 若訂單仍為 6/12 請改期",
     stops: [
       { label: "努諾可石雕", csvName: "Non Nuoc Pagoda" },
       { label: "大理石山售票亭（五行山）", csvName: "The Marble Mountains", detail: "舍利塔、靈應一寺、唐鐘洞" },

@@ -19,13 +19,13 @@ const PLAN = {
     ["16:35", null, "桃園機場 IT551 出發", "航班", null, "含於機加酒", { flight: true, mapsUrl: TPE, noMap: true }],
     ["18:10", null, "峴港機場 DAD 抵達", "交通", "飛機", null, { mapsUrl: DAD }],
     ["19:30", null, `入住 · ${HTL}`, "住宿", "Grab 機場", "機加酒 · 僅随身行李", { hotel: "danangMain" }],
-    ["20:15", "Nhà hàng Madame Lân", "越式晚餐", "美食", "Grab 短程", "換匯改 Day1 09:00（不趕）", {}],
+    ["20:15", "Nhà hàng Madame Lân", "越式晚餐", "美食", "Grab 短程", "換匯改 Day1 09:00", {}],
     ["21:45", null, `返回 · ${HTL}`, "住宿", "Grab", null, { hotel: "danangMain", end: true }],
   ],
   /** 原 Day3 休閒日 → 首日不排 Klook，上午換匯 */
   1: [
-    ["09:00", "Tiệm Vàng Soạn Hà", "換匯（峴港）", "購物", "步行/Grab", "營業 07:00–19:00 · 不趕", {}],
-    ["10:00", null, `出發 · ${HTL}`, "住宿", null, "海洲→市中心→美溪", { hotel: "danangMain" }],
+    ["09:00", null, `出發 · ${HTL}`, "住宿", null, "海洲→市中心→美溪", { hotel: "danangMain" }],
+    ["10:00", "Tiệm Vàng Soạn Hà", "換匯（峴港）", "購物", "步行/Grab", "營業 07:00–19:00 · 不趕", {}],
     ["10:30", "Da Nang Cathedral", "粉紅大教堂", "景點", "Grab 短程", null, {}],
     ["11:30", "Vincom Plaza Da Nang", "商場吹冷氣", "購物", "Grab", null, {}],
     ["12:30", "Golden Lotus Oriental Organic Spa", "按摩", "體驗", "Grab", "午間休息", {}],
