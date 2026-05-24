@@ -130,22 +130,7 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/hoa-phu-thanh-tourist-area-2.jpg",
     "/place-photos/hoa-phu-thanh-tourist-area-3.jpg"
   ],
-  "the-saga-hotel-hoi-an": [
-    "/place-photos/hotel-hoiAn-1.jpg",
-    "/place-photos/hotel-hoiAn-2.jpg",
-    "/place-photos/hotel-hoiAn-3.jpg"
-  ],
-  "THE SAGA HOTEL HOI AN": [
-    "/place-photos/hotel-hoiAn-1.jpg",
-    "/place-photos/hotel-hoiAn-2.jpg",
-    "/place-photos/hotel-hoiAn-3.jpg"
-  ],
   "elite-riverlight-hotel-by-elite24": [
-    "/place-photos/hotel-danangMain-1.jpg",
-    "/place-photos/hotel-danangMain-2.jpg",
-    "/place-photos/hotel-danangMain-3.jpg"
-  ],
-  "Elite Riverlight Hotel by Elite24": [
     "/place-photos/hotel-danangMain-1.jpg",
     "/place-photos/hotel-danangMain-2.jpg",
     "/place-photos/hotel-danangMain-3.jpg"
@@ -1105,16 +1090,6 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/hoi-an-museum-2.jpg",
     "/place-photos/hoi-an-museum-3.jpg"
   ],
-  "hotel-danangMain": [
-    "/place-photos/hotel-danangMain-1.jpg",
-    "/place-photos/hotel-danangMain-2.jpg",
-    "/place-photos/hotel-danangMain-3.jpg"
-  ],
-  "hotel-hoiAn": [
-    "/place-photos/hotel-hoiAn-1.jpg",
-    "/place-photos/hotel-hoiAn-2.jpg",
-    "/place-photos/hotel-hoiAn-3.jpg"
-  ],
   "souvenir-Han Market": [
     "/place-photos/souvenir-Han-Market-1.jpg",
     "/place-photos/souvenir-Han-Market-2.jpg",
@@ -1225,6 +1200,36 @@ export const PLACE_PHOTO_MANIFEST = {
     "/place-photos/souvenir-item-pepper-1.jpg",
     "/place-photos/souvenir-item-pepper-2.jpg",
     "/place-photos/souvenir-item-pepper-3.jpg"
+  ],
+  "the-dream-suite": [
+    "/place-photos/hotel-danangMain-1.jpg",
+    "/place-photos/hotel-danangMain-2.jpg",
+    "/place-photos/hotel-danangMain-3.jpg"
+  ],
+  "The Dream Suite": [
+    "/place-photos/hotel-danangMain-1.jpg",
+    "/place-photos/hotel-danangMain-2.jpg",
+    "/place-photos/hotel-danangMain-3.jpg"
+  ],
+  "the-saga-hotel-hoi-an": [
+    "/place-photos/hotel-hoiAn-1.jpg",
+    "/place-photos/hotel-hoiAn-2.jpg",
+    "/place-photos/hotel-hoiAn-3.jpg"
+  ],
+  "THE SAGA HOTEL HOI AN": [
+    "/place-photos/hotel-hoiAn-1.jpg",
+    "/place-photos/hotel-hoiAn-2.jpg",
+    "/place-photos/hotel-hoiAn-3.jpg"
+  ],
+  "hotel-danangMain": [
+    "/place-photos/hotel-danangMain-1.jpg",
+    "/place-photos/hotel-danangMain-2.jpg",
+    "/place-photos/hotel-danangMain-3.jpg"
+  ],
+  "hotel-hoiAn": [
+    "/place-photos/hotel-hoiAn-1.jpg",
+    "/place-photos/hotel-hoiAn-2.jpg",
+    "/place-photos/hotel-hoiAn-3.jpg"
   ]
 };
 

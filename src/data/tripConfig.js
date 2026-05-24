@@ -1,4 +1,4 @@
-import { HOTELS } from "./hotels.js";
+import { HOTELS, DANANG_HOTEL_BOOKING } from "./hotels.js";
 import { FLIGHT_BOOKING, PACKAGE_BOOKING, KLOOK_COUPLE_TOTAL } from "./bookedActivities.js";
 import { calcExpenseSummary, EXPENSE_ECONOMY_ACTIVE } from "./expenses.js";
 
@@ -27,5 +27,5 @@ export const TRIP_CONFIG = {
     mapsUrl: h.mapsUrl,
     hotelId: h.id,
   })),
-  packageDealAnalysys: `已訂：機加酒（含虎航）NT$${PACKAGE_BOOKING.coupleTotal.toLocaleString()} + Klook NT$${KLOOK_COUPLE_TOTAL.toLocaleString()} + 其餘約 NT$${(summary.total - PACKAGE_BOOKING.coupleTotal - KLOOK_COUPLE_TOTAL).toLocaleString()} = 雙人總計約 NT$${summary.total.toLocaleString()}（每人 NT$${summary.perPerson.toLocaleString()}）。`,
+  packageDealAnalysys: `已訂：Trip.com（虎航+Saga）NT$${PACKAGE_BOOKING.coupleTotal.toLocaleString()} + Dream Suite NT$${DANANG_HOTEL_BOOKING.coupleTotal.toLocaleString()} + Klook NT$${KLOOK_COUPLE_TOTAL.toLocaleString()} + 其餘約 NT$${(summary.total - PACKAGE_BOOKING.coupleTotal - DANANG_HOTEL_BOOKING.coupleTotal - KLOOK_COUPLE_TOTAL).toLocaleString()} = 雙人總計約 NT$${summary.total.toLocaleString()}（每人 NT$${summary.perPerson.toLocaleString()}）。`,
 };

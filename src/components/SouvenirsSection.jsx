@@ -24,7 +24,7 @@ export default function SouvenirsSection() {
       </p>
 
       <div className="card" style={{ marginBottom: "20px", borderColor: "rgba(200,151,90,0.4)" }}>
-        <h3 className="section-title">建議採購動線（Elite Riverlight 出發）</h3>
+        <h3 className="section-title">建議採購動線（Dream Suite · An Hải 出發）</h3>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))", gap: "12px", marginBottom: "16px" }}>
           {SOUVENIR_SHOPPING_DAYS[0].places.map((name) => {
             const p = getCsvByName(name);

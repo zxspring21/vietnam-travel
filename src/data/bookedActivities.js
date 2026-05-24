@@ -1,4 +1,6 @@
-/** 已訂 Klook / 機票 / 機加酒 — 含交通者不再另計 Grab/包車/租機車 */
+/** 已訂 Klook / 機票 / 住宿 — 含交通者不再另計 Grab/包車/租機車 */
+
+import { DANANG_HOTEL_BOOKING } from "./hotels.js";
 
 export const FLIGHT_BOOKING = {
   airline: "台灣虎航",
@@ -10,19 +12,33 @@ export const FLIGHT_BOOKING = {
   coupleTotal: 10138 * 2,
 };
 
+/** Trip.com 套裝 NT$26,500（虎航 + Saga）；峴港 Dream Suite 另訂 NT$12,278 */
+export const TRIP_COM_PACKAGE_COUPLE = 26500;
+
 export const PACKAGE_BOOKING = {
-  label: "Trip.com 機加酒（6/11–6/20）",
-  coupleTotal: 36000,
-  perPerson: 18000,
+  label: "Trip.com 機加酒（虎航 + Saga）+ Dream Suite",
+  coupleTotal: TRIP_COM_PACKAGE_COUPLE,
+  danangHotelExtra: DANANG_HOTEL_BOOKING.coupleTotal,
+  coupleTotalWithDanang: TRIP_COM_PACKAGE_COUPLE + DANANG_HOTEL_BOOKING.coupleTotal,
+  perPerson: Math.round((TRIP_COM_PACKAGE_COUPLE + DANANG_HOTEL_BOOKING.coupleTotal) / 2),
   includesFlights: true,
   url: "https://tw.trip.com/packages/list?departurecity=台北&arrivalcity=峴港",
   segments: [
-    { from: "6/11", to: "6/17", hotel: "danangMain", note: "Elite Riverlight Hotel by Elite24" },
-    { from: "6/17", to: "6/20", hotel: "hoiAn", note: "THE SAGA HOTEL HOI AN" },
+    {
+      from: "6/11",
+      to: "6/17",
+      hotel: "danangMain",
+      note: `The Dream Suite NT$${DANANG_HOTEL_BOOKING.coupleTotal.toLocaleString()}/雙人（獨立訂）`,
+    },
+    { from: "6/17", to: "6/20", hotel: "hoiAn", note: "THE SAGA HOTEL HOI AN（機加酒）" },
   ],
+  breakdown: {
+    tripComPackage: TRIP_COM_PACKAGE_COUPLE,
+    danangHotel: DANANG_HOTEL_BOOKING.coupleTotal,
+  },
 };
 
-/** @type {Array<{id:string, name:string, platform:string, url:string, coupleTwd:number, perPersonTwd?:number, days:number[], linkDays?:number[], coversTransport:boolean, note:string, stops?:Array}>} */
+/** @type {Array<{id:string, name:string, platform:string, url:string, coupleTwd:number, perPersonTwd?:number, days:number[], linkDays?:number[], coversTransport:boolean, note:string, stops?:Array, pickup?:string}>} */
 export const KLOOK_BOOKINGS = [
   {
     id: "dad-day-1573",
@@ -33,26 +49,40 @@ export const KLOOK_BOOKINGS = [
     perPersonTwd: 958,
     days: [3],
     coversTransport: true,
-    note: "09:00 飯店接送 · 13:30 回飯店 · 行程排 Day 3（6/14）— 若訂單仍為 6/12 請改期",
+    pickup: "The Dream Suite · 09:00",
+    note: "09:00 Dream Suite 接送 · 13:30 回飯店 · Day 3（6/14）",
     stops: [
       { label: "努諾可石雕", csvName: "Non Nuoc Pagoda" },
-      { label: "大理石山售票亭（五行山）", csvName: "The Marble Mountains", detail: "舍利塔、靈應一寺、唐鐘洞" },
-      { label: "峴港靈應寺·白佛觀音像（山茶半島）", csvName: "Chùa Linh Ứng", detail: "Bai But / Lady Buddha 一帶" },
-      { label: "順福橋", csvName: null, detail: "Thuan Phuoc Bridge" },
+      { label: "大理石山售票亭（五行山）", csvName: "The Marble Mountains" },
+      { label: "峴港靈應寺·白佛觀音像（山茶半島）", csvName: "Chùa Linh Ứng" },
+      { label: "順福橋", csvName: null },
       { label: "峴港占婆雕刻博物館", csvName: "Da Nang Museum of Cham Sculpture" },
       { label: "韓市場", csvName: "Han Market" },
     ],
   },
   {
     id: "bana-13283",
-    name: "峴港太陽世界巴拿山門票（含雲霄飛車3+自助午餐+往返巴士）",
+    name: "峴港太陽世界巴拿山門票+纜車+往返巴士",
     platform: "Klook",
     url: "https://www.klook.com/zh-TW/activity/13283-ba-na-hills-ticket-da-nang/",
     coupleTwd: 3614,
     perPersonTwd: 1807,
     days: [2],
     coversTransport: true,
-    note: "2 人 · 往返接駁巴士已含",
+    pickup: "A La Carte Danang Beach 集合",
+    note: "08:30 出發→16:30 返回 · A La Carte↔巴拿山 · 含黃金橋/愛情花園/Luna/Helios/法國村/夢幻花園/啤酒廠",
+    includes: [
+      "太陽世界巴拿山門票",
+      "往返纜車（票面單次）",
+      "A La Carte 集合點↔巴拿山巴士",
+      "黃金橋",
+      "愛情花園",
+      "Luna 城堡",
+      "Helios 瀑布",
+      "法國村",
+      "夢幻花園（遊戲另計）",
+      "Sun Kraft 啤酒廠品飲",
+    ],
   },
   {
     id: "hue-4808",
@@ -63,7 +93,8 @@ export const KLOOK_BOOKINGS = [
     perPersonTwd: 1275,
     days: [4],
     coversTransport: true,
-    note: "2 人 · 含往返交通與行程",
+    pickup: "The Dream Suite · 08:00",
+    note: "08:00 Dream Suite 接送 · 含往返",
   },
   {
     id: "myson-1602",
@@ -74,7 +105,7 @@ export const KLOOK_BOOKINGS = [
     perPersonTwd: 374,
     days: [7],
     coversTransport: true,
-    note: "11:30 廣南麵午餐 · 13:30 回飯店",
+    note: "11:30 廣南麵午餐 · 13:30 回 Saga",
   },
   {
     id: "memories-17514",
@@ -85,7 +116,7 @@ export const KLOOK_BOOKINGS = [
     perPersonTwd: 1377,
     days: [8],
     coversTransport: true,
-    note: "週三至週一開放 · Non La 燒烤自助 17:00–20:30",
+    note: "週三至週一 · Non La 燒烤 17:00–20:30",
   },
   {
     id: "transfer-dad-hoi-182982",
@@ -95,6 +126,7 @@ export const KLOOK_BOOKINGS = [
     coupleTwd: 340,
     days: [6],
     coversTransport: true,
+    pickup: "The Dream Suite",
     note: "6/17 移防 · 2 人",
   },
   {
@@ -105,7 +137,7 @@ export const KLOOK_BOOKINGS = [
     coupleTwd: 340,
     days: [9],
     coversTransport: true,
-    note: "2 人 · 若需先回峴港再赴機場",
+    note: "11:00 Saga 出發",
   },
   {
     id: "cooking-136639",
@@ -116,12 +148,7 @@ export const KLOOK_BOOKINGS = [
     perPersonTwd: 551,
     days: [8],
     coversTransport: true,
-    note: "08:30 飯店接送 · 錦清市場→迦南島椰子林→烹飪課",
-    stops: [
-      { label: "錦清當地市場", csvName: null },
-      { label: "水椰林迦南島 Cam Thanh", csvName: null, detail: "Bay Mau 椰子林" },
-      { label: "竹籃船＋烹飪課程", csvName: null },
-    ],
+    note: "08:30 Saga 接送",
   },
   {
     id: "teh-dar-10213",
@@ -132,7 +159,7 @@ export const KLOOK_BOOKINGS = [
     perPersonTwd: 834,
     days: [6],
     coversTransport: false,
-    note: "18:00–19:00 · 17:30 到場取票＋迎賓飲品",
+    note: "18:00–19:00 · 17:30 到場",
   },
   {
     id: "pass-72346",
@@ -144,7 +171,7 @@ export const KLOOK_BOOKINGS = [
     days: [6, 7, 8],
     linkDays: [6],
     coversTransport: false,
-    note: "2 人 · 每人 5 景點 · 見 hoiAnAncientPass.js 建議",
+    note: "2 人 · 每人 5 景點",
   },
 ];
 

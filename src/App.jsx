@@ -31,7 +31,7 @@ export default function App() {
     <div className="app-shell">
       <header className="app-header">
         <h1>🇻🇳 中越蜜月 · 6/11–6/20</h1>
-        <p>Elite Riverlight→Saga · Klook · Google Places 實景照</p>
+        <p>Dream Suite→Saga · Klook · Google Places 實景照</p>
       </header>
 
       <nav className="app-nav">

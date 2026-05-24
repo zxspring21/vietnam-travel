@@ -1,5 +1,68 @@
-/** 自動生成：central_vietnam_itinerary.csv · 119 筆 · 請執行 npm run parse-csv */
+/** 自動生成：central_vietnam_itinerary.csv · 125 筆 · 請執行 npm run parse-csv */
 export const CSV_PLACES = [
+  {
+    "id": "the-dream-suite",
+    "name": "The Dream Suite",
+    "note": "峴港6/11-17住宿",
+    "url": "https://www.google.com/maps/place/The+Dream+Suite/data=!4m2!3m1!1s0x31421783dd29d14f:0x7151e5bff6df4e2",
+    "tags": []
+  },
+  {
+    "id": "a-la-carte-danang-beach",
+    "name": "A La Carte Danang Beach",
+    "note": "峴港太陽世界巴拿山的tour 早上8:30集合地點，回16:30",
+    "url": "https://www.google.com/maps/place/A+La+Carte+Danang+Beach/data=!4m2!3m1!1s0x3142178414e2dd27:0xe82c30135e1d5f85",
+    "tags": []
+  },
+  {
+    "id": "nh-h-ng-n-n-l",
+    "name": "Nhà hàng Nón Lá",
+    "note": "",
+    "url": "https://www.google.com/maps/place/Nh%C3%A0+h%C3%A0ng+N%C3%B3n+L%C3%A1/data=!4m2!3m1!1s0x31420db1e2daf741:0xdb4a5a23b1485833",
+    "tags": []
+  },
+  {
+    "id": "my-khe-beach",
+    "name": "My Khe Beach",
+    "note": "",
+    "url": "https://www.google.com/maps/place/My+Khe+Beach/data=!4m2!3m1!1s0x3142177a66590321:0xf36c13917474b9d",
+    "tags": []
+  },
+  {
+    "id": "my-khe-beach-5",
+    "name": "My Khe Beach",
+    "note": "",
+    "url": "https://www.google.com/maps/place/My+Khe+Beach/data=!4m2!3m1!1s0x31421782f7fa0ee3:0xeafb8ba272ee55ac",
+    "tags": []
+  },
+  {
+    "id": "museum-of-folk-culture",
+    "name": "Museum of Folk Culture",
+    "note": "",
+    "url": "https://www.google.com/maps/place/Museum+of+Folk+Culture/data=!4m2!3m1!1s0x31420e7e551ddfc3:0x6b5df4f6f6573f7a",
+    "tags": []
+  },
+  {
+    "id": "museum-of-trade-ceramics",
+    "name": "Museum of Trade Ceramics",
+    "note": "",
+    "url": "https://www.google.com/maps/place/Museum+of+Trade+Ceramics/data=!4m2!3m1!1s0x31420e7efb9ee7eb:0xcb737d31aba2e61e",
+    "tags": []
+  },
+  {
+    "id": "quan-cong-temple",
+    "name": "Quan Cong Temple",
+    "note": "",
+    "url": "https://www.google.com/maps/place/Quan+Cong+Temple/data=!4m2!3m1!1s0x31420e7f6c511f01:0xf1fb397be3ac0e2a",
+    "tags": []
+  },
+  {
+    "id": "ba-mu-temple-gate",
+    "name": "Ba Mu Temple Gate",
+    "note": "",
+    "url": "https://www.google.com/maps/place/Ba+Mu+Temple+Gate/data=!4m2!3m1!1s0x31420f000b629463:0xf1bd317bef32799f",
+    "tags": []
+  },
   {
     "id": "ellie-s-cafe-hoi-an-healthy-breakfast-brunch-lunch",
     "name": "Ellie's Cafe Hoi An - Healthy Breakfast- Brunch- Lunch",
@@ -31,7 +94,7 @@ export const CSV_PLACES = [
   {
     "id": "hoi-an-traditional-art-performance-house",
     "name": "Hoi An Traditional Art Performance House",
-    "note": "每天 10:15、15:15 及 16:15 固定的傳統民俗音樂及舞蹈表演，暫時關閉",
+    "note": "每天 10:15、15:15 及 16:15 固定的傳統民俗音樂及舞蹈表演",
     "url": "https://www.google.com/maps/place/Hoi+An+Traditional+Art+Performance+House/data=!4m2!3m1!1s0x31420e7e55a5baa9:0xd9d555d9b927d774",
     "tags": []
   },
@@ -96,15 +159,6 @@ export const CSV_PLACES = [
     "name": "THE SAGA HOTEL HOI AN",
     "note": "hotel",
     "url": "https://www.google.com/maps/place/THE+SAGA+HOTEL+HOI+AN/data=!4m2!3m1!1s0x31420d5ba221929b:0x474daecf526df5cf",
-    "tags": [
-      "🏘️ 飯店"
-    ]
-  },
-  {
-    "id": "elite-riverlight-hotel-by-elite24",
-    "name": "Elite Riverlight Hotel by Elite24",
-    "note": "",
-    "url": "https://www.google.com/maps/place/Elite+Riverlight+Hotel+by+Elite24/data=!4m2!3m1!1s0x31421815fba2de95:0x24593a16fd915435",
     "tags": [
       "🏘️ 飯店"
     ]
@@ -273,7 +327,7 @@ export const CSV_PLACES = [
     ]
   },
   {
-    "id": "海雲關-35",
+    "id": "海雲關-43",
     "name": "海雲關",
     "note": "",
     "url": "https://www.google.com/maps/place/%E6%B5%B7%E9%9B%B2%E9%97%9C/data=!4m2!3m1!1s0x3142219e02bc568b:0xb04a3eba486386b5",
@@ -372,7 +426,7 @@ export const CSV_PLACES = [
     ]
   },
   {
-    "id": "c-ng-c-ph-46",
+    "id": "c-ng-c-ph-54",
     "name": "Cộng Cà Phê",
     "note": "",
     "url": "https://www.google.com/maps/place/C%E1%BB%99ng+C%C3%A0+Ph%C3%AA/data=!4m2!3m1!1s0x314218321ae9468b:0x7f3c3d5f44588746",
@@ -930,24 +984,10 @@ export const CSV_PLACES = [
     "note": "",
     "url": "https://www.google.com/maps/place/Han+Market/data=!4m2!3m1!1s0x31421832397ecc0d:0x90b24f8b8cb2873f",
     "tags": []
-  },
-  {
-    "id": "museum-of-folk-culture",
-    "name": "Museum of Folk Culture",
-    "note": "民俗博物館·套票",
-    "url": "https://www.google.com/maps/search/?api=1&query_place_id=ChIJw98dVX4OQjERej9X9vb0XWs",
-    "tags": []
-  },
-  {
-    "id": "hoi-an-museum",
-    "name": "Hoi An Museum",
-    "note": "会安历史文化博物館·套票",
-    "url": "https://www.google.com/maps/search/?api=1&query_place_id=ChIJ-ZrBZ7sPQjERPUCqNK7c0Ng",
-    "tags": []
   }
 ];
 
-export const CSV_PLACE_COUNT = 119;
+export const CSV_PLACE_COUNT = 125;
 
 const byName = new Map();
 const byId = new Map();

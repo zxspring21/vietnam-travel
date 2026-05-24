@@ -17,6 +17,7 @@ const manifestPath = join(__dirname, "../src/data/placePhotoManifest.js");
 
 const API_KEY = process.env.GOOGLE_MAPS_API_KEY || process.env.VITE_GOOGLE_MAPS_API_KEY;
 const REFS_ONLY = process.argv.includes("--refs-only");
+const HOTELS_ONLY = process.argv.includes("--hotels-only");
 
 if (!API_KEY) {
   console.error("請在 .env 設定 GOOGLE_MAPS_API_KEY 或 VITE_GOOGLE_MAPS_API_KEY");
@@ -29,13 +30,35 @@ const { HOTELS } = await import("../src/data/hotels.js");
 const { TOP10_SOUVENIRS, SOUVENIR_SHOPPING_DAYS } = await import("../src/data/souvenirs.js");
 
 mkdirSync(outDir, { recursive: true });
+
+const HOTEL_FILE_PREFIXES = ["hotel-danangMain", "hotel-hoiAn", "the-dream-suite", "the-saga-hotel-hoi-an"];
+
+function shouldClearJpeg(name) {
+  if (!HOTELS_ONLY) return /\.jpe?g$/i.test(name);
+  const base = name.replace(/\.jpe?g$/i, "");
+  return HOTEL_FILE_PREFIXES.some((p) => base === p || base.startsWith(`${p}-`));
+}
+
 for (const f of readdirSync(outDir)) {
-  if (/\.jpe?g$/i.test(f)) {
+  if (shouldClearJpeg(f)) {
     try {
       unlinkSync(join(outDir, f));
     } catch {
       /* ignore */
     }
+  }
+}
+
+let existingRefs = {};
+let existingManifest = {};
+if (HOTELS_ONLY) {
+  try {
+    const refsMod = await import("../src/data/placePhotoRefs.js");
+    existingRefs = refsMod.PLACE_PHOTO_REFS || {};
+    const manMod = await import("../src/data/placePhotoManifest.js");
+    existingManifest = manMod.PLACE_PHOTO_MANIFEST || {};
+  } catch {
+    /* first run */
   }
 }
 
@@ -46,7 +69,11 @@ function addTarget(id, name, mapsUrl, lat, lng, photoSearchQuery) {
   targets.set(id, { id, name, mapsUrl, lat, lng, photoSearchQuery });
 }
 
+const isHotelCsv = (p) =>
+  /飯店|hotel|住宿/i.test(p.note || "") || /🏘️/.test((p.tags || []).join(" "));
+
 for (const p of CSV_PLACES) {
+  if (HOTELS_ONLY && !isHotelCsv(p) && p.id !== "the-dream-suite") continue;
   const c = CSV_COORDS[p.id];
   addTarget(p.id, p.name, p.url, c?.lat, c?.lng);
 }
@@ -56,20 +83,21 @@ for (const h of Object.values(HOTELS)) {
   addTarget(`hotel-${h.id}`, h.name, h.mapsUrl, h.lat, h.lng, q);
 }
 
-for (const d of SOUVENIR_SHOPPING_DAYS) {
-  for (const placeName of d.places) {
-    const p = CSV_PLACES.find((x) => x.name === placeName);
-    const c = p ? CSV_COORDS[p.id] : null;
-    addTarget(`souvenir-${placeName}`, placeName, p?.url, c?.lat, c?.lng);
+if (!HOTELS_ONLY) {
+  for (const d of SOUVENIR_SHOPPING_DAYS) {
+    for (const placeName of d.places) {
+      const p = CSV_PLACES.find((x) => x.name === placeName);
+      const c = p ? CSV_COORDS[p.id] : null;
+      addTarget(`souvenir-${placeName}`, placeName, p?.url, c?.lat, c?.lng);
+    }
+  }
+  for (const s of TOP10_SOUVENIRS) {
+    addTarget(`souvenir-item-${s.id}`, s.name, null, 16.068, 108.221);
   }
 }
 
-for (const s of TOP10_SOUVENIRS) {
-  addTarget(`souvenir-item-${s.id}`, s.name, null, 16.068, 108.221);
-}
-
-const PLACE_PHOTO_REFS = {};
-const manifest = {};
+const PLACE_PHOTO_REFS = HOTELS_ONLY ? { ...existingRefs } : {};
+const manifest = HOTELS_ONLY ? { ...existingManifest } : {};
 let ok = 0;
 let skip = 0;
 let cached = 0;
@@ -78,6 +106,13 @@ function photoIdsFromEntry(info) {
   if (info.photoNames?.length) return info.photoNames.slice(0, PHOTOS_PER_PLACE);
   if (info.photoReferences?.length) return info.photoReferences.slice(0, PHOTOS_PER_PLACE);
   return [];
+}
+
+if (HOTELS_ONLY) {
+  for (const key of [...HOTEL_FILE_PREFIXES, "The Dream Suite", "THE SAGA HOTEL HOI AN"]) {
+    delete PLACE_PHOTO_REFS[key];
+    delete manifest[key];
+  }
 }
 
 for (const t of targets.values()) {
@@ -129,13 +164,26 @@ for (const t of targets.values()) {
 
 /** CSV 飯店 slug 與 hotel-* 合併，避免同名不同圖 */
 const HOTEL_ALIASES = [
-  ["elite-riverlight-hotel-by-elite24", "hotel-danangMain"],
+  ["the-dream-suite", "hotel-danangMain"],
   ["the-saga-hotel-hoi-an", "hotel-hoiAn"],
 ];
 for (const [csvId, hotelKey] of HOTEL_ALIASES) {
   if (manifest[hotelKey]) manifest[csvId] = manifest[hotelKey];
   if (PLACE_PHOTO_REFS[hotelKey]) PLACE_PHOTO_REFS[csvId] = PLACE_PHOTO_REFS[hotelKey];
 }
+for (const h of Object.values(HOTELS)) {
+  const key = `hotel-${h.id}`;
+  if (manifest[key]) {
+    manifest[h.name] = manifest[key];
+    manifest[h.csvName] = manifest[key];
+  }
+  if (PLACE_PHOTO_REFS[key]) {
+    PLACE_PHOTO_REFS[h.name] = PLACE_PHOTO_REFS[key];
+    PLACE_PHOTO_REFS[h.csvName] = PLACE_PHOTO_REFS[key];
+  }
+}
+delete PLACE_PHOTO_REFS["Elite Riverlight Hotel by Elite24"];
+delete manifest["Elite Riverlight Hotel by Elite24"];
 
 writeFileSync(
   refsPath,

@@ -1,6 +1,6 @@
 /**
  * 每日站點 — 自動生成（npm run build-stops）
- * 行程 6/11–6/20 · CSV 景點：37 個
+ * 行程 6/11–6/20 · CSV 景點：35 個
  */
 const DAD = "https://www.google.com/maps/place/Da+Nang+International+Airport/data=!4m2!3m1!1s0x3141cb2741ea73b5:0x97e732c06fb2980b";
 const TPE = "https://www.google.com/maps/place/Taiwan+Taoyuan+International+Airport/data=!4m2!3m1!1s0x3442d97d0e6e5d61:0xf86a31b9d9c4c5e2";
@@ -28,26 +28,26 @@ export const DAY_STOPS = {
       "time": "19:30",
       "type": "住宿",
       "transportFromPrev": "Grab 機場",
-      "detail": "機加酒 · 僅随身行李",
-      "title": "入住 · Elite Riverlight Hotel by Elite24",
+      "detail": "An Hải · 美溪東岸",
+      "title": "入住 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true
     },
     {
-      "time": "20:15",
+      "time": "20:30",
       "type": "美食",
       "transportFromPrev": "Grab 短程",
-      "detail": "換匯改 Day1 09:00",
-      "csvName": "Nhà hàng Madame Lân",
-      "title": "越式晚餐"
+      "detail": "近飯店",
+      "csvName": "Esco Beach, Bar Lounge & Restaurant",
+      "title": "海灘晚餐"
     },
     {
       "time": "21:45",
       "type": "住宿",
       "transportFromPrev": "Grab",
       "detail": "",
-      "title": "返回 · Elite Riverlight Hotel by Elite24",
+      "title": "返回 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true,
@@ -57,67 +57,58 @@ export const DAY_STOPS = {
   "1": [
     {
       "time": "09:00",
-      "type": "住宿",
-      "detail": "海洲→市中心→美溪",
-      "title": "出發 · Elite Riverlight Hotel by Elite24",
-      "isHotel": true,
-      "hotelId": "danangMain",
-      "inCsv": true
-    },
-    {
-      "time": "10:00",
       "type": "購物",
-      "transportFromPrev": "步行/Grab",
-      "detail": "營業 07:00–19:00 · 不趕",
+      "transportFromPrev": "Grab 海洲",
+      "detail": "07:00–19:00",
       "csvName": "Tiệm Vàng Soạn Hà",
       "title": "換匯（峴港）"
     },
     {
-      "time": "10:30",
+      "time": "10:15",
       "type": "景點",
-      "transportFromPrev": "Grab 短程",
+      "transportFromPrev": "Grab",
       "detail": "",
       "csvName": "Da Nang Cathedral",
       "title": "粉紅大教堂"
     },
     {
-      "time": "11:30",
+      "time": "11:15",
       "type": "購物",
       "transportFromPrev": "Grab",
       "detail": "",
       "csvName": "Vincom Plaza Da Nang",
-      "title": "商場吹冷氣"
+      "title": "商場"
     },
     {
       "time": "12:30",
-      "type": "體驗",
-      "transportFromPrev": "Grab",
-      "detail": "午間休息",
-      "csvName": "Golden Lotus Oriental Organic Spa",
-      "title": "按摩"
-    },
-    {
-      "time": "15:00",
       "type": "美食",
       "transportFromPrev": "Grab",
-      "detail": "咖啡",
+      "detail": "午餐",
       "csvName": "Phin Cu Coffee",
       "title": "Phin Cu Coffee"
     },
     {
-      "time": "18:00",
-      "type": "美食",
+      "time": "14:00",
+      "type": "體驗",
       "transportFromPrev": "Grab",
       "detail": "",
-      "csvName": "My Hanh Seafood",
-      "title": "美溪海鮮晚餐"
+      "csvName": "Golden Lotus Oriental Organic Spa",
+      "title": "按摩"
     },
     {
-      "time": "21:30",
+      "time": "18:00",
+      "type": "美食",
+      "transportFromPrev": "Grab 短程",
+      "detail": "近 Dream Suite",
+      "csvName": "My Hanh Seafood",
+      "title": "美溪海鮮"
+    },
+    {
+      "time": "21:00",
       "type": "住宿",
       "transportFromPrev": "Grab",
       "detail": "",
-      "title": "返回 · Elite Riverlight Hotel by Elite24",
+      "title": "返回 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true,
@@ -126,10 +117,11 @@ export const DAY_STOPS = {
   ],
   "2": [
     {
-      "time": "07:00",
+      "time": "07:15",
       "type": "住宿",
-      "detail": "Klook #13283",
-      "title": "出發 · Elite Riverlight Hotel by Elite24",
+      "transportFromPrev": "Grab",
+      "detail": "前往集合點",
+      "title": "出發 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true,
@@ -137,17 +129,36 @@ export const DAY_STOPS = {
       "klookUrl": "https://www.klook.com/zh-TW/activity/13283-ba-na-hills-ticket-da-nang/"
     },
     {
-      "time": "08:00",
+      "time": "07:45",
+      "type": "交通",
+      "transportFromPrev": "步行/Grab",
+      "detail": "200 Võ Nguyên Giáp",
+      "csvName": "A La Carte Danang Beach",
+      "title": "巴拿山巴士集合",
+      "klookId": "bana-13283",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/13283-ba-na-hills-ticket-da-nang/"
+    },
+    {
+      "time": "08:30",
+      "type": "交通",
+      "transportFromPrev": "Klook",
+      "detail": "",
+      "title": "巴士出發 · 巴拿山",
+      "klookId": "bana-13283",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/13283-ba-na-hills-ticket-da-nang/"
+    },
+    {
+      "time": "09:00",
       "type": "景點",
-      "transportFromPrev": "Klook 巴士",
-      "detail": "門票+雲霄飛車3",
+      "transportFromPrev": "纜車",
+      "detail": "門票+纜車",
       "csvName": "Ba Na Hills SunWorld",
       "title": "巴拿山",
       "klookId": "bana-13283",
       "klookUrl": "https://www.klook.com/zh-TW/activity/13283-ba-na-hills-ticket-da-nang/"
     },
     {
-      "time": "10:00",
+      "time": "10:30",
       "type": "景點",
       "transportFromPrev": "園內",
       "detail": "",
@@ -157,33 +168,52 @@ export const DAY_STOPS = {
     {
       "time": "12:30",
       "type": "美食",
-      "transportFromPrev": "園內含票",
-      "detail": "Klook 已含",
-      "title": "國際自助午餐"
+      "transportFromPrev": "園內",
+      "detail": "可自費或輕食",
+      "title": "園內午餐"
     },
     {
-      "time": "17:00",
-      "type": "交通",
-      "transportFromPrev": "Klook",
-      "detail": "",
-      "title": "Klook 巴士返回",
+      "time": "14:00",
+      "type": "景點",
+      "transportFromPrev": "園內",
+      "detail": "依體力選逛",
+      "title": "Luna 城堡·法國村·Helios 等",
       "klookId": "bana-13283",
       "klookUrl": "https://www.klook.com/zh-TW/activity/13283-ba-na-hills-ticket-da-nang/"
     },
     {
-      "time": "19:00",
-      "type": "美食",
-      "transportFromPrev": "Grab",
+      "time": "16:30",
+      "type": "交通",
+      "transportFromPrev": "Klook",
       "detail": "",
-      "csvName": "Bếp Cuốn Đà Nẵng",
-      "title": "Bếp Cuốn Đà Nẵng"
+      "title": "巴士返回集合點",
+      "klookId": "bana-13283",
+      "klookUrl": "https://www.klook.com/zh-TW/activity/13283-ba-na-hills-ticket-da-nang/"
     },
     {
-      "time": "21:30",
+      "time": "17:15",
       "type": "住宿",
       "transportFromPrev": "Grab",
       "detail": "",
-      "title": "返回 · Elite Riverlight Hotel by Elite24",
+      "title": "返回 · The Dream Suite",
+      "isHotel": true,
+      "hotelId": "danangMain",
+      "inCsv": true
+    },
+    {
+      "time": "19:00",
+      "type": "美食",
+      "transportFromPrev": "Grab 短程",
+      "detail": "An Hải",
+      "csvName": "Thèm Hải Sản",
+      "title": "海鮮晚餐"
+    },
+    {
+      "time": "21:00",
+      "type": "住宿",
+      "transportFromPrev": "Grab",
+      "detail": "",
+      "title": "返回 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true,
@@ -194,8 +224,8 @@ export const DAY_STOPS = {
     {
       "time": "08:30",
       "type": "住宿",
-      "detail": "Klook #1573 · 09:00 接送",
-      "title": "出發 · Elite Riverlight Hotel by Elite24",
+      "detail": "Klook 09:00 接送",
+      "title": "等候 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true,
@@ -205,8 +235,8 @@ export const DAY_STOPS = {
     {
       "time": "09:00",
       "type": "景點",
-      "transportFromPrev": "Klook 飯店接送",
-      "detail": "雙人 NT$1,916",
+      "transportFromPrev": "飯店接送",
+      "detail": "Dream Suite 出發",
       "title": "Klook 峴港一日遊",
       "klookId": "dad-day-1573",
       "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
@@ -227,7 +257,7 @@ export const DAY_STOPS = {
       "transportFromPrev": "Tour",
       "detail": "",
       "csvName": "The Marble Mountains",
-      "title": "大理石山售票亭",
+      "title": "大理石山",
       "klookId": "dad-day-1573",
       "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
     },
@@ -237,7 +267,7 @@ export const DAY_STOPS = {
       "transportFromPrev": "Tour",
       "detail": "",
       "csvName": "Chùa Linh Ứng",
-      "title": "靈應寺白佛觀音像",
+      "title": "靈應寺白佛",
       "klookId": "dad-day-1573",
       "klookUrl": "https://www.klook.com/zh-TW/activity/1573-day-trip-da-nang/"
     },
@@ -264,7 +294,7 @@ export const DAY_STOPS = {
       "time": "13:00",
       "type": "購物",
       "transportFromPrev": "Tour",
-      "detail": "團末順路",
+      "detail": "",
       "csvName": "Han Market",
       "title": "韓市場",
       "klookId": "dad-day-1573",
@@ -275,7 +305,7 @@ export const DAY_STOPS = {
       "type": "住宿",
       "transportFromPrev": "Klook",
       "detail": "",
-      "title": "返回 · Elite Riverlight Hotel by Elite24",
+      "title": "返回 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true,
@@ -286,7 +316,7 @@ export const DAY_STOPS = {
       "time": "18:00",
       "type": "景點",
       "transportFromPrev": "Grab",
-      "detail": "週末可能有噴火",
+      "detail": "週末噴火",
       "csvName": "Dragon Bridge",
       "title": "龍橋"
     },
@@ -296,14 +326,14 @@ export const DAY_STOPS = {
       "transportFromPrev": "Grab",
       "detail": "",
       "csvName": "Bánh Xèo Bà Dưỡng",
-      "title": "越式煎餅"
+      "title": "煎餅晚餐"
     },
     {
-      "time": "21:30",
+      "time": "21:00",
       "type": "住宿",
       "transportFromPrev": "Grab",
       "detail": "",
-      "title": "返回 · Elite Riverlight Hotel by Elite24",
+      "title": "返回 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true,
@@ -312,10 +342,10 @@ export const DAY_STOPS = {
   ],
   "4": [
     {
-      "time": "06:30",
+      "time": "07:30",
       "type": "住宿",
-      "detail": "Klook #4808",
-      "title": "出發 · Elite Riverlight Hotel by Elite24（順化團）",
+      "detail": "Klook 08:00 接送",
+      "title": "出發 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true,
@@ -323,10 +353,10 @@ export const DAY_STOPS = {
       "klookUrl": "https://www.klook.com/zh-TW/activity/4808-hue-day-tour-da-nang/"
     },
     {
-      "time": "07:00",
+      "time": "08:00",
       "type": "景點",
-      "transportFromPrev": "Klook 全程",
-      "detail": "",
+      "transportFromPrev": "Klook",
+      "detail": "Dream Suite 上車",
       "title": "陵姑灣＆順化一日遊",
       "klookId": "hue-4808",
       "klookUrl": "https://www.klook.com/zh-TW/activity/4808-hue-day-tour-da-nang/"
@@ -352,7 +382,7 @@ export const DAY_STOPS = {
       "type": "住宿",
       "transportFromPrev": "Klook",
       "detail": "",
-      "title": "返回 · Elite Riverlight Hotel by Elite24",
+      "title": "返回 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true,
@@ -365,8 +395,8 @@ export const DAY_STOPS = {
     {
       "time": "09:00",
       "type": "住宿",
-      "detail": "在地市場體驗",
-      "title": "出發 · Elite Riverlight Hotel by Elite24",
+      "detail": "美溪散步·輕鬆",
+      "title": "出發 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true
@@ -374,32 +404,31 @@ export const DAY_STOPS = {
     {
       "time": "09:30",
       "type": "體驗",
-      "transportFromPrev": "Grab 短程",
-      "detail": "",
-      "csvName": "Con Market",
-      "title": "傳統市場"
+      "transportFromPrev": "步行",
+      "detail": "飯店旁",
+      "title": "美溪沙灘散步"
     },
     {
       "time": "11:00",
       "type": "體驗",
       "transportFromPrev": "Grab",
-      "detail": "",
-      "csvName": "Bac My An Market",
-      "title": "美安市場"
+      "detail": "順路小逛",
+      "csvName": "Han Market",
+      "title": "韓市場"
     },
     {
       "time": "12:30",
       "type": "美食",
-      "transportFromPrev": "Grab",
+      "transportFromPrev": "Grab 短程",
       "detail": "",
-      "csvName": "Bánh Mì Ba Lan",
-      "title": "法棍"
+      "csvName": "Esco Beach, Bar Lounge & Restaurant",
+      "title": "午餐"
     },
     {
       "time": "14:30",
       "type": "體驗",
       "transportFromPrev": "Grab",
-      "detail": "",
+      "detail": "打包前",
       "csvName": "Golden Lotus Oriental Organic Spa",
       "title": "按摩"
     },
@@ -407,16 +436,15 @@ export const DAY_STOPS = {
       "time": "18:00",
       "type": "美食",
       "transportFromPrev": "Grab",
-      "detail": "收尾晚餐",
-      "csvName": "Moggumeong",
-      "title": "Moggumeong"
+      "detail": "近飯店",
+      "csvName": "Thèm Hải Sản",
+      "title": "晚餐"
     },
     {
-      "time": "20:30",
+      "time": "20:00",
       "type": "住宿",
-      "transportFromPrev": "Grab",
       "detail": "",
-      "title": "返回 · Elite Riverlight Hotel by Elite24 · 打包",
+      "title": "返回 · The Dream Suite · 打包",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true,
@@ -428,7 +456,7 @@ export const DAY_STOPS = {
       "time": "08:00",
       "type": "住宿",
       "detail": "",
-      "title": "退房 · Elite Riverlight Hotel by Elite24",
+      "title": "退房 · The Dream Suite",
       "isHotel": true,
       "hotelId": "danangMain",
       "inCsv": true,
@@ -437,8 +465,8 @@ export const DAY_STOPS = {
     {
       "time": "09:00",
       "type": "交通",
-      "transportFromPrev": "Klook #182982",
-      "detail": "",
+      "transportFromPrev": "Klook",
+      "detail": "Dream Suite",
       "title": "Klook 私人接送 → 會安",
       "klookId": "transfer-dad-hoi-182982",
       "klookUrl": "https://www.klook.com/zh-TW/activity/182982-da-nang-hoi-an-private-transfer-to-hoi-an-mikazuki-water-park-intercontinental-da-nang/"
@@ -447,14 +475,14 @@ export const DAY_STOPS = {
       "time": "11:00",
       "type": "住宿",
       "transportFromPrev": "Klook",
-      "detail": "寄行李",
+      "detail": "",
       "title": "入住 · THE SAGA HOTEL HOI AN",
       "isHotel": true,
       "hotelId": "hoiAn",
       "inCsv": true
     },
     {
-      "time": "11:45",
+      "time": "12:00",
       "type": "美食",
       "transportFromPrev": "Grab→步行",
       "detail": "",
@@ -465,7 +493,7 @@ export const DAY_STOPS = {
       "time": "12:45",
       "type": "景點",
       "transportFromPrev": "步行",
-      "detail": "17:30 前逛完 5 景點",
+      "detail": "17:30 前",
       "title": "進古城 · 套票",
       "klookId": "pass-72346",
       "klookUrl": "https://www.klook.com/zh-TW/activity/72346-hoi-an-ancient-town-attractions-adminssion-ticket/"
@@ -500,7 +528,7 @@ export const DAY_STOPS = {
       "transportFromPrev": "步行",
       "detail": "套票 4/5",
       "csvName": "Hoi An Museum",
-      "title": "歷史文化博物館"
+      "title": "歷史博物館"
     },
     {
       "time": "15:45",
@@ -514,7 +542,7 @@ export const DAY_STOPS = {
       "time": "17:30",
       "type": "表演",
       "transportFromPrev": "Grab",
-      "detail": "Klook #10213",
+      "detail": "",
       "title": "Teh Dar 取票",
       "klookId": "teh-dar-10213",
       "klookUrl": "https://www.klook.com/zh-TW/activity/10213-teh-dar-show-ticket-hoi-an/"
@@ -531,10 +559,10 @@ export const DAY_STOPS = {
     {
       "time": "19:30",
       "type": "美食",
-      "transportFromPrev": "Grab/步行",
+      "transportFromPrev": "步行",
       "detail": "",
       "csvName": "越南會安夜市",
-      "title": "越南會安夜市"
+      "title": "晚餐"
     },
     {
       "time": "21:00",
@@ -552,7 +580,7 @@ export const DAY_STOPS = {
     {
       "time": "07:30",
       "type": "住宿",
-      "detail": "美山團",
+      "detail": "美山",
       "title": "出發 · THE SAGA",
       "isHotel": true,
       "hotelId": "hoiAn",
@@ -563,7 +591,7 @@ export const DAY_STOPS = {
     {
       "time": "08:00",
       "type": "景點",
-      "transportFromPrev": "Klook 巴士",
+      "transportFromPrev": "Klook",
       "detail": "",
       "title": "Klook 美山聖地",
       "klookId": "myson-1602",
@@ -572,7 +600,7 @@ export const DAY_STOPS = {
     {
       "time": "11:30",
       "type": "美食",
-      "transportFromPrev": "Tour 含",
+      "transportFromPrev": "Tour",
       "detail": "",
       "title": "廣南麵午餐"
     },
@@ -592,26 +620,26 @@ export const DAY_STOPS = {
       "transportFromPrev": "Grab",
       "detail": "",
       "csvName": "Thanh Ha Pottery Village, Hoi An",
-      "title": "Thanh Ha 陶藝村"
+      "title": "陶藝村"
     },
     {
       "time": "16:15",
       "type": "體驗",
       "transportFromPrev": "Grab→步行",
-      "detail": "16:15 免費場",
+      "detail": "16:15 免費",
       "csvName": "The Center for Culture and Sports of Hoi An city",
-      "title": "民俗音樂舞蹈"
+      "title": "民俗表演"
     },
     {
-      "time": "19:30",
+      "time": "18:30",
       "type": "美食",
-      "transportFromPrev": "Grab",
-      "detail": "",
-      "csvName": "Purple Lantern Restaurant( An Bang Beach Hoi An )",
-      "title": "Purple Lantern Restaurant( An Bang Beach Hoi An )"
+      "transportFromPrev": "Grab→步行",
+      "detail": "慢逛古城",
+      "csvName": "HOME Hoi An",
+      "title": "古鎮晚餐"
     },
     {
-      "time": "21:30",
+      "time": "21:00",
       "type": "住宿",
       "transportFromPrev": "Grab",
       "detail": "",
@@ -626,7 +654,7 @@ export const DAY_STOPS = {
     {
       "time": "08:30",
       "type": "住宿",
-      "detail": "Klook #136639",
+      "detail": "烹飪課",
       "title": "出發 · THE SAGA",
       "isHotel": true,
       "hotelId": "hoiAn",
@@ -637,24 +665,24 @@ export const DAY_STOPS = {
     {
       "time": "08:30",
       "type": "體驗",
-      "transportFromPrev": "Klook 全程",
-      "detail": "",
+      "transportFromPrev": "Klook",
+      "detail": "全日",
       "title": "烹飪課＋市場＋竹籃船",
       "klookId": "cooking-136639",
       "klookUrl": "https://www.klook.com/zh-TW/activity/136639-coconut-forest-basket-boat-cooking-class-hoian/"
     },
     {
-      "time": "14:00",
+      "time": "14:30",
       "type": "景點",
-      "transportFromPrev": "Grab",
-      "detail": "",
-      "csvName": "An Bang Beach",
-      "title": "An Bang Beach"
+      "transportFromPrev": "Grab→步行",
+      "detail": "非套票·街景",
+      "csvName": "Hoi An ancient town",
+      "title": "古鎮慢遊"
     },
     {
       "time": "15:30",
       "type": "體驗",
-      "transportFromPrev": "Grab→步行",
+      "transportFromPrev": "步行",
       "detail": "",
       "csvName": "Hoi An Lantern Boat Tour ( 호이안 랜턴 보트 투어 )",
       "title": "燈籠船"
@@ -664,7 +692,7 @@ export const DAY_STOPS = {
       "type": "交通",
       "transportFromPrev": "Grab",
       "detail": "",
-      "title": "前往 Hoi An Memories Land",
+      "title": "前往 Memories Land",
       "klookId": "memories-17514",
       "klookUrl": "https://www.klook.com/zh-TW/activity/17514-hoi-an-memories-show-ticket/"
     },
@@ -709,20 +737,20 @@ export const DAY_STOPS = {
       "checkout": true
     },
     {
-      "time": "09:00",
+      "time": "08:30",
       "type": "景點",
       "transportFromPrev": "Grab",
-      "detail": "",
-      "csvName": "Công Viên Đèn Lồng Hội An - Hoi An Lantern Park",
-      "title": "燈籠公園"
+      "detail": "最後一天慢遊",
+      "csvName": "An Bang Beach",
+      "title": "An Bang 半日"
     },
     {
-      "time": "10:15",
-      "type": "體驗",
-      "transportFromPrev": "Grab/步行",
-      "detail": "10:15 免費場 · 近古城",
-      "csvName": "The Center for Culture and Sports of Hoi An city",
-      "title": "民俗音樂舞蹈"
+      "time": "10:30",
+      "type": "美食",
+      "transportFromPrev": "Grab",
+      "detail": "An Bang",
+      "csvName": "Pause and Enjoy Restaurant",
+      "title": "午餐"
     },
     {
       "time": "11:00",
@@ -735,17 +763,9 @@ export const DAY_STOPS = {
     },
     {
       "time": "13:00",
-      "type": "美食",
-      "transportFromPrev": "Grab",
-      "detail": "",
-      "csvName": "Bếp Cuốn Đà Nẵng",
-      "title": "峴港午餐"
-    },
-    {
-      "time": "15:00",
       "type": "交通",
-      "transportFromPrev": "Grab 送機",
-      "detail": "",
+      "transportFromPrev": "Grab/Klook",
+      "detail": "送機",
       "title": "峴港機場 DAD",
       "mapsUrl": "https://www.google.com/maps/place/Da+Nang+International+Airport/data=!4m2!3m1!1s0x3141cb2741ea73b5:0x97e732c06fb2980b"
     },
@@ -762,4 +782,4 @@ export const DAY_STOPS = {
   ]
 };
 
-export const ITINERARY_CSV_COUNT = 37;
+export const ITINERARY_CSV_COUNT = 35;

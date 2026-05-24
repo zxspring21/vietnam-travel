@@ -58,9 +58,13 @@ export default function HomeOverview({ onSelectDay }) {
             <a href={PACKAGE_BOOKING.url} target="_blank" rel="noopener noreferrer" style={{ color: "#5B8DEF" }}>
               機加酒（含虎航）
             </a>
-            ：雙人 NT${PACKAGE_BOOKING.coupleTotal.toLocaleString()} · {FLIGHT_BOOKING.outbound.time} / {FLIGHT_BOOKING.inbound.time}
+            ：Trip.com 雙人 NT${PACKAGE_BOOKING.coupleTotal.toLocaleString()} + Dream Suite NT$
+            {PACKAGE_BOOKING.danangHotelExtra.toLocaleString()} · {FLIGHT_BOOKING.outbound.time} /{" "}
+            {FLIGHT_BOOKING.inbound.time}
           </li>
-          <li style={{ opacity: 0.85 }}>Elite Riverlight 6/11–17 · Saga 6/17–20 · {FLIGHT_BOOKING.baggage}</li>
+          <li style={{ opacity: 0.85 }}>
+            Dream Suite 6/11–17（An Hải）· Saga 6/17–20 · {FLIGHT_BOOKING.baggage}
+          </li>
         </ul>
         <ul style={{ margin: "12px 0 0", paddingLeft: "20px", lineHeight: 1.8, fontSize: "14px" }}>
           {KLOOK_BOOKINGS.map((b) => (

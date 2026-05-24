@@ -2,598 +2,603 @@
 export const CSV_COORDS = {
   "ellie-s-cafe-hoi-an-healthy-breakfast-brunch-lunch": {
     "name": "Ellie's Cafe Hoi An - Healthy Breakfast- Brunch- Lunch",
-    "lat": 15.8781898,
-    "lng": 108.3213309
+    "lat": 15.877,
+    "lng": 108.327
   },
   "ti-m-ch-x-u-ch-ngon-h-i-an": {
     "name": "Tiệm Chè Xíu - Chè Ngon Hội An",
-    "lat": 15.879543,
-    "lng": 108.3239307
+    "lat": 15.877,
+    "lng": 108.327
   },
   "the-center-for-culture-and-sports-of-hoi-an-city": {
     "name": "The Center for Culture and Sports of Hoi An city",
-    "lat": 15.877734,
-    "lng": 108.3232679
+    "lat": 15.877,
+    "lng": 108.327
   },
   "s-ng-ho-i-square": {
     "name": "Sông Hoài Square",
-    "lat": 15.8773305,
-    "lng": 108.3233185
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "hoi-an-traditional-art-performance-house": {
     "name": "Hoi An Traditional Art Performance House",
-    "lat": 15.8760971,
-    "lng": 108.3297841
+    "lat": 15.877,
+    "lng": 108.327
   },
   "old-river-restaurant-bar": {
     "name": "Old River Restaurant - Bar",
-    "lat": 15.8772348,
-    "lng": 108.339432
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "restaurant-328": {
     "name": "Restaurant 328",
-    "lat": 15.8850333,
-    "lng": 108.3493798
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "h-i-an-lune-center-for-the-performing-arts": {
     "name": "Hội An Lune Center for the Performing Arts",
-    "lat": 15.8750879,
-    "lng": 108.3289792
+    "lat": 15.877,
+    "lng": 108.327
   },
   "go-da-nang": {
     "name": "GO! Da Nang",
-    "lat": 16.0667896,
-    "lng": 108.2135427
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "lotte-mart-supermarket": {
     "name": "Lotte Mart Supermarket",
-    "lat": 16.0348373,
-    "lng": 108.2292584
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "vincom-plaza-da-nang": {
     "name": "Vincom Plaza Da Nang",
-    "lat": 16.0714014,
-    "lng": 108.2299673
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "golden-lotus-oriental-organic-spa": {
     "name": "Golden Lotus Oriental Organic Spa",
-    "lat": 16.0672885,
-    "lng": 108.2445288
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "hoa-phu-thanh-tourist-area": {
     "name": "Hoa Phu Thanh Tourist Area",
-    "lat": 15.9577622,
-    "lng": 107.9916977
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "the-saga-hotel-hoi-an": {
     "name": "THE SAGA HOTEL HOI AN",
-    "lat": 15.8819172,
-    "lng": 108.3454889
+    "lat": 15.877,
+    "lng": 108.327
   },
-  "elite-riverlight-hotel-by-elite24": {
-    "name": "Elite Riverlight Hotel by Elite24",
-    "lat": 16.087293,
-    "lng": 108.219485
+  "the-dream-suite": {
+    "name": "The Dream Suite",
+    "lat": 16.0482,
+    "lng": 108.2475
+  },
+  "a-la-carte-danang-beach": {
+    "name": "A La Carte Danang Beach",
+    "lat": 16.052,
+    "lng": 108.248
   },
   "phin-cu-coffee": {
     "name": "Phin Cu Coffee",
-    "lat": 16.0750899,
-    "lng": 108.2420525
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "nh-an-vietnamese-local-food-restaurant-and-vegan": {
     "name": "Nhà An - Vietnamese local food restaurant and vegan",
-    "lat": 16.0749852,
-    "lng": 108.2430715
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "non-nuoc-pagoda": {
     "name": "Non Nuoc Pagoda",
-    "lat": 21.2889444,
-    "lng": 105.8299209
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "ba-na-hills-sunworld": {
     "name": "Ba Na Hills SunWorld",
-    "lat": 16.0265144,
-    "lng": 108.0327972
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "the-monkey-mountain": {
     "name": "The Monkey Mountain",
-    "lat": 16.1159837,
-    "lng": 108.273341
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "nh-v-ng-c-nh": {
     "name": "Nhà Vọng cảnh",
-    "lat": 16.1351089,
-    "lng": 108.2453758
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "ph-bi-b-o": {
     "name": "PHỞ BI BÉO",
-    "lat": 16.068788,
-    "lng": 108.2323226
+    "lat": 16.067,
+    "lng": 108.221
   },
   "moggumeong": {
     "name": "Moggumeong",
-    "lat": 10.7676271,
-    "lng": 106.6953143
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "lady-buddha": {
     "name": "Lady Buddha",
-    "lat": 16.0996678,
-    "lng": 108.2769531
+    "lat": 16.1,
+    "lng": 108.2775
   },
   "ph-b-c-63": {
     "name": "PHỞ BẮC 63",
-    "lat": 16.0760689,
-    "lng": 108.2157479
+    "lat": 16.067,
+    "lng": 108.221
   },
   "my-hanh-seafood": {
     "name": "My Hanh Seafood",
-    "lat": 16.0654025,
-    "lng": 108.2461698
+    "lat": 16.05,
+    "lng": 108.249
   },
   "golden-lotus-oriental-organic-spa-1": {
     "name": "Golden Lotus Oriental Organic Spa 1",
-    "lat": 16.0647031,
-    "lng": 108.2236424
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "b-nh-x-o-b-d-ng": {
     "name": "Bánh Xèo Bà Dưỡng",
-    "lat": 16.0588772,
-    "lng": 108.216166
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "ba-nh-mi-ba-lan": {
     "name": "Bánh mì Bà Lan",
-    "lat": 16.0587003,
-    "lng": 108.210809
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "天姥寺": {
     "name": "天姥寺",
-    "lat": 16.4531778,
-    "lng": 107.5448331
+    "lat": 16.4534,
+    "lng": 107.545
   },
   "y-thao-garden": {
     "name": "Y Thao Garden",
-    "lat": 16.4680329,
-    "lng": 107.5670232
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "hue-historic-citadel": {
     "name": "Hue Historic Citadel",
-    "lat": 16.47694,
-    "lng": 107.5739587
+    "lat": 16.4696,
+    "lng": 107.5796
   },
   "立安潭": {
     "name": "立安潭",
-    "lat": 16.2214218,
-    "lng": 108.0615629
+    "lat": 16.2833,
+    "lng": 108.0833
   },
   "海雲關": {
     "name": "海雲關",
     "lat": 16.2,
-    "lng": 108.133333
+    "lng": 108.13
   },
-  "海雲關-35": {
+  "海雲關-36": {
     "name": "海雲關",
     "lat": 16.2,
-    "lng": 108.133333
+    "lng": 108.13
   },
   "b-nh-m-sum": {
     "name": "Bánh Mì Sum",
-    "lat": 15.8797382,
-    "lng": 108.3241959
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "c-ng-c-ph": {
     "name": "Cộng Cà Phê",
-    "lat": 25.0459017,
-    "lng": 121.5138286
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "hoi-an-lantern-boat-tour": {
     "name": "Hoi An Lantern Boat Tour ( 호이안 랜턴 보트 투어 )",
-    "lat": 15.875072,
-    "lng": 108.3273525
+    "lat": 15.877,
+    "lng": 108.327
   },
   "nguon-spa-da-nang-ngu-n-ho-ng-k-vi-m": {
     "name": "Nguon Spa Da Nang - Nguồn Hoàng Kế Viêm",
-    "lat": 16.0489688,
-    "lng": 108.2440955
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "luxury-herbal-spa": {
     "name": "Luxury Herbal Spa",
-    "lat": 16.069025,
-    "lng": 108.2370264
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "魚蛋粉": {
     "name": "魚蛋粉",
-    "lat": 25.0223853,
-    "lng": 121.2928209
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "k-a-seafood-restaurant": {
     "name": "Ơ Kìa - Seafood Restaurant",
-    "lat": 16.0801078,
-    "lng": 108.2230986
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "巴拿山奇幻樂園": {
     "name": "巴拿山奇幻樂園",
-    "lat": 15.9972041,
-    "lng": 107.988763
+    "lat": 15.995,
+    "lng": 107.9892
   },
   "b-p-cu-n-n-ng": {
     "name": "Bếp Cuốn Đà Nẵng",
-    "lat": 16.0579628,
-    "lng": 108.2451505
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "th-m-h-i-s-n": {
     "name": "Thèm Hải Sản",
-    "lat": 16.0570832,
-    "lng": 108.245463
+    "lat": 16.049,
+    "lng": 108.248
   },
-  "c-ng-c-ph-46": {
+  "c-ng-c-ph-47": {
     "name": "Cộng Cà Phê",
-    "lat": 25.0459017,
-    "lng": 121.5138286
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "dragon-bridge": {
     "name": "Dragon Bridge",
-    "lat": 16.0611042,
-    "lng": 108.2276926
+    "lat": 16.0614,
+    "lng": 108.2275
   },
   "nh-h-ng-madame-l-n": {
     "name": "Nhà hàng Madame Lân",
-    "lat": 16.0814063,
-    "lng": 108.2232528
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "purple-lantern-restaurant-an-bang-beach-hoi-an": {
     "name": "Purple Lantern Restaurant( An Bang Beach Hoi An )",
-    "lat": 15.9128263,
-    "lng": 108.3370204
+    "lat": 15.9034,
+    "lng": 108.3528
   },
   "qu-n-b-nh-o-l": {
     "name": "Quán bánh O Lé",
-    "lat": 16.4609719,
-    "lng": 107.559637
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "b-nh-m-tr-ng-ti-n-o-tho": {
     "name": "Bánh Mì Trường Tiền O Tho",
-    "lat": 16.4654264,
-    "lng": 107.5916386
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "cozy-restaurant-hu": {
     "name": "Cozy Restaurant ( Huế )",
-    "lat": 16.4640423,
-    "lng": 107.593495
+    "lat": 16.4637,
+    "lng": 107.5909
   },
   "family-home-cafe-restaurant": {
     "name": "Family Home Cafe & Restaurant",
-    "lat": 16.4645644,
-    "lng": 107.5928454
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "madam-thu-2-hue-restaurant": {
     "name": "Madam Thu 2 - Hue Restaurant",
-    "lat": 16.4688098,
-    "lng": 107.595512
+    "lat": 16.4637,
+    "lng": 107.5909
   },
   "nina-s-cafe-vietnamese-restaurant": {
     "name": "Nina's Cafe-Vietnamese Restaurant",
-    "lat": 16.4641789,
-    "lng": 107.5927018
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "cam-on-cafe-coffee-class": {
     "name": "Cam On cafe - Coffee Class",
-    "lat": 16.4687871,
-    "lng": 107.5960932
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "v-hu-restaurant-caf": {
     "name": "Vị Huế Restaurant & Café",
-    "lat": 16.4705504,
-    "lng": 107.5960122
+    "lat": 16.4637,
+    "lng": 107.5909
   },
   "zucca-restaurant": {
     "name": "Zucca Restaurant",
-    "lat": 16.4701197,
-    "lng": 107.5952235
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "sake-restaurant": {
     "name": "Sake Restaurant",
-    "lat": 16.4689171,
-    "lng": 107.5978018
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "hue-imperial-city": {
     "name": "Hue Imperial City",
-    "lat": 16.469527,
-    "lng": 107.577432
+    "lat": 16.4696,
+    "lng": 107.5796
   },
   "c-i-coffee": {
     "name": "CỦI COFFEE",
-    "lat": 16.4546476,
-    "lng": 107.5681521
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "eco-restaurant-bar-coffee": {
     "name": "ECO restaurant -bar- coffee",
-    "lat": 16.425284,
-    "lng": 107.579829
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "six-on-six-cafe-brunch-restaurant": {
     "name": "SIX ON SIX CAFE - BRUNCH & RESTAURANT",
-    "lat": 16.0432336,
-    "lng": 108.2442276
+    "lat": 16.055,
+    "lng": 108.215
   },
   "maharaja-indian-restaurant-n-ng-since-2016": {
     "name": "Maharaja Indian Restaurant Đà Nẵng ( since 2016)",
-    "lat": 16.0495376,
-    "lng": 108.2472441
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "korea-bbq-house": {
     "name": "Korea BBQ House",
-    "lat": 16.0534615,
-    "lng": 108.2463835
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "adobo-mexican-grill": {
     "name": "Adobo Mexican Grill",
-    "lat": 16.0493189,
-    "lng": 108.2473065
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "nh-b-p-x-a-restaurant": {
     "name": "Nhà Bếp Xưa Restaurant",
-    "lat": 16.0660246,
-    "lng": 108.244216
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "vietnam-daily-cuisine": {
     "name": "Vietnam Daily Cuisine",
-    "lat": 16.0522604,
-    "lng": 108.2459802
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "indus-indian-restaurant-nh-h-ng-n": {
     "name": "Indus Indian Restaurant - Nhà hàng Ấn Độ - 인도 음식점",
-    "lat": 16.0550142,
-    "lng": 108.2442947
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "l-italiano-restaurant-danang": {
     "name": "L'Italiano Restaurant Danang",
-    "lat": 16.0511304,
-    "lng": 108.2456882
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "emo-s-homecooked-vietnamese-cuisine": {
     "name": "EMO'S HOMECOOKED VIETNAMESE CUISINE",
-    "lat": 16.0581755,
-    "lng": 108.2454735
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "c-ng-vi-n-n-l-ng-h-i-an-hoi-an-lantern-park": {
     "name": "Công Viên Đèn Lồng Hội An - Hoi An Lantern Park",
-    "lat": 15.876433,
-    "lng": 108.3328899
+    "lat": 15.877,
+    "lng": 108.327
   },
   "esco-beach-bar-lounge-restaurant": {
     "name": "Esco Beach, Bar Lounge & Restaurant",
-    "lat": 16.0659264,
-    "lng": 108.2460097
+    "lat": 16.052,
+    "lng": 108.248
   },
   "loco-restaurant-danang-seafood-restaurant": {
     "name": "LoCo Restaurant - Danang Seafood Restaurant - 다낭 레스토랑",
-    "lat": 16.0715002,
-    "lng": 108.2241655
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "th-a-g-峴港餐廳": {
     "name": "Thìa Gỗ 峴港餐廳",
-    "lat": 16.0529867,
-    "lng": 108.2415777
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "ti-m-v-ng-so-n-h": {
     "name": "Tiệm Vàng Soạn Hà",
-    "lat": 16.0678495,
-    "lng": 108.2239418
+    "lat": 15.8792,
+    "lng": 108.3298
   },
   "bac-my-an-market": {
     "name": "Bac My An Market",
-    "lat": 16.0415773,
-    "lng": 108.2422664
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "con-market": {
     "name": "Con Market",
-    "lat": 16.0677927,
-    "lng": 108.2144834
+    "lat": 16.064,
+    "lng": 108.219
   },
   "棋盤頂": {
     "name": "棋盤頂",
-    "lat": 16.1189365,
-    "lng": 108.2719826
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "pause-and-enjoy-restaurant": {
     "name": "Pause and Enjoy Restaurant",
-    "lat": 15.8741287,
-    "lng": 108.3263267
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "firefly-restaurant-bar": {
     "name": "Firefly Restaurant & Bar",
-    "lat": 15.8760728,
-    "lng": 108.3462668
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "nhan-s-kitchen": {
     "name": "Nhan's kitchen",
-    "lat": 15.8782307,
-    "lng": 108.3451337
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "hoi-an-memories-land": {
     "name": "Hoi An Memories Land",
-    "lat": 15.8749898,
-    "lng": 108.3387285
+    "lat": 15.8736,
+    "lng": 108.3689
   },
   "baba-s-kitchen-indian-restaurant-hoian": {
     "name": "Baba's Kitchen Indian Restaurant - Hoian",
-    "lat": 15.8784041,
-    "lng": 108.3260167
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "mix-greek-restaurant-hoi-an": {
     "name": "MIX Greek Restaurant Hoi An",
-    "lat": 15.8774496,
-    "lng": 108.3284546
+    "lat": 15.877,
+    "lng": 108.327
   },
   "anabas-restaurant-c-r-ng-qu-n-hoi-an-restaurant": {
     "name": "Anabas Restaurant - Cá Rô Đồng Quán - Hoi An restaurant - 호이안 로컬 레스토랑",
-    "lat": 15.8783617,
-    "lng": 108.3304168
+    "lat": 15.877,
+    "lng": 108.327
   },
   "hong-phuc-2": {
     "name": "Hong Phuc 2",
-    "lat": 16.0729897,
-    "lng": 108.1882152
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "m-t-h-i-an-vietnamese-restaurant-vegetarian-food-met-10": {
     "name": "MẸT Hội An - Vietnamese restaurant & Vegetarian Food MET 10",
-    "lat": 15.8760467,
-    "lng": 108.3256523
+    "lat": 15.877,
+    "lng": 108.327
   },
   "hoi-an-heart-restaurant": {
     "name": "Hoi An Heart Restaurant",
-    "lat": 15.8760738,
-    "lng": 108.3296892
+    "lat": 15.877,
+    "lng": 108.327
   },
   "m-t-h-i-an-vietnamese-restaurant-vegetarian-food-met-9": {
     "name": "MẸT Hội An - Vietnamese restaurant & Vegetarian Food MET 9",
-    "lat": 15.8785902,
-    "lng": 108.3280774
+    "lat": 15.877,
+    "lng": 108.327
   },
   "maazi-hoi-an": {
     "name": "MAAZI Hoi An",
-    "lat": 15.8767188,
-    "lng": 108.3268231
+    "lat": 15.877,
+    "lng": 108.327
   },
   "home-hoi-an": {
     "name": "HOME Hoi An",
-    "lat": 15.8757943,
-    "lng": 108.3250571
+    "lat": 15.877,
+    "lng": 108.327
   },
   "m-t-h-i-an-vietnamese-restaurant-vegetarian-food-6": {
     "name": "MẸT Hội An - Vietnamese restaurant & Vegetarian Food 6",
-    "lat": 15.8760935,
-    "lng": 108.3294151
+    "lat": 15.877,
+    "lng": 108.327
   },
   "阮廷沼步行街": {
     "name": "阮廷沼步行街",
-    "lat": 16.466961,
-    "lng": 107.5890376
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "ch-a-c-u": {
     "name": "Chùa Cầu",
-    "lat": 15.8770873,
-    "lng": 108.3260704
+    "lat": 15.8775,
+    "lng": 108.3263
   },
   "廣肇會館": {
     "name": "廣肇會館",
-    "lat": 15.8774847,
-    "lng": 108.3306281
+    "lat": 15.877,
+    "lng": 108.327
   },
   "中華會館": {
     "name": "中華會館",
-    "lat": 15.877391,
-    "lng": 108.3300194
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "進記古宅": {
     "name": "進記古宅",
-    "lat": 15.8764821,
-    "lng": 108.3277659
+    "lat": 15.877,
+    "lng": 108.327
   },
   "hoi-an-ancient-town": {
     "name": "Hoi An ancient town",
-    "lat": 15.8768461,
-    "lng": 108.3261777
+    "lat": 15.877,
+    "lng": 108.3269
   },
   "福建會館": {
     "name": "福建會館",
-    "lat": 15.8774847,
-    "lng": 108.3306281
+    "lat": 15.877,
+    "lng": 108.327
   },
   "my-son-sanctuary": {
     "name": "My Son Sanctuary",
-    "lat": 15.7687821,
-    "lng": 108.1193154
+    "lat": 15.7644,
+    "lng": 108.1247
   },
   "嗣德陵": {
     "name": "嗣德陵",
-    "lat": 16.4330652,
-    "lng": 107.5645137
+    "lat": 16.4333,
+    "lng": 107.561
   },
   "明命陵-孝陵": {
     "name": "明命陵（孝陵）",
-    "lat": 16.3875386,
-    "lng": 107.5702467
+    "lat": 16.4125,
+    "lng": 107.565
   },
   "thanh-ha-pottery-village-hoi-an": {
     "name": "Thanh Ha Pottery Village, Hoi An",
-    "lat": 15.8781302,
-    "lng": 108.3005058
+    "lat": 15.878,
+    "lng": 108.345
   },
   "美山聖地": {
     "name": "美山聖地",
-    "lat": 15.7687821,
-    "lng": 108.1193154
+    "lat": 15.7644,
+    "lng": 108.1247
   },
   "an-bang-beach": {
     "name": "An Bang Beach",
-    "lat": 15.9136072,
-    "lng": 108.3406489
+    "lat": 15.9034,
+    "lng": 108.3528
   },
   "mausoleum-of-emperor-khai-dinh": {
     "name": "Mausoleum of Emperor Khai Dinh",
-    "lat": 16.3989535,
-    "lng": 107.5902955
+    "lat": 16.3988,
+    "lng": 107.5901
   },
   "golden-bridge": {
     "name": "Golden Bridge",
-    "lat": 15.9949375,
-    "lng": 107.9965625
+    "lat": 15.995,
+    "lng": 107.9964
   },
   "rosie-s-cafe-coffee-brunch": {
     "name": "Rosie's cafe / Coffee & Brunch",
-    "lat": 15.8877761,
-    "lng": 108.3303339
+    "lat": 16.0544,
+    "lng": 108.1994
   },
   "m-h-i-an-rooftop-coffee-kitchen": {
     "name": "Mê Hội An Rooftop Coffee & Kitchen",
-    "lat": 15.8771366,
-    "lng": 108.3269249
+    "lat": 15.877,
+    "lng": 108.327
   },
   "會安市場": {
     "name": "會安市場",
-    "lat": 15.8770038,
-    "lng": 108.331305
+    "lat": 15.877,
+    "lng": 108.327
   },
   "越南會安夜市": {
     "name": "越南會安夜市",
-    "lat": 15.8759693,
-    "lng": 108.3260184
+    "lat": 15.877,
+    "lng": 108.327
   },
   "the-marble-mountains": {
     "name": "The Marble Mountains",
-    "lat": 16.0037104,
-    "lng": 108.2631605
+    "lat": 16.0039,
+    "lng": 108.2633
   },
   "ch-a-linh-ng": {
     "name": "Chùa Linh Ứng",
-    "lat": 16.1002606,
-    "lng": 108.2777478
+    "lat": 16.1,
+    "lng": 108.2775
   },
   "da-nang-cathedral": {
     "name": "Da Nang Cathedral",
-    "lat": 16.0670448,
-    "lng": 108.223186
+    "lat": 16.0689,
+    "lng": 108.1614
   },
   "da-nang-museum-of-cham-sculpture": {
     "name": "Da Nang Museum of Cham Sculpture",
-    "lat": 16.0603007,
-    "lng": 108.2232677
+    "lat": 16.0603,
+    "lng": 108.2203
   },
   "han-market": {
     "name": "Han Market",
-    "lat": 16.0680836,
-    "lng": 108.224069
+    "lat": 16.0678,
+    "lng": 108.2208
   },
-  "museum-of-trade-ceramics": {
-    "name": "Museum of Trade Ceramics",
-    "lat": 15.8772894,
-    "lng": 108.3295509
+  "museum-of-folk-culture": {
+    "name": "Museum of Folk Culture",
+    "lat": 15.8775,
+    "lng": 108.329
   },
   "hoi-an-museum": {
     "name": "Hoi An Museum",
-    "lat": 15.8771398,
-    "lng": 108.3342634
+    "lat": 15.8778,
+    "lng": 108.3268
   }
 };
 

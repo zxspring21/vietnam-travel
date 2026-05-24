@@ -21,7 +21,7 @@ export const EXCHANGE_ADVICE = {
     carryOnOnly: true,
     soanHaCloses: "19:00",
     verdict: "當晚不必換匯",
-    day0Instead: "Day 0：機場 → Elite 入住 → Madame Lân 晚餐。大額換匯留 Day 1 09:00。",
+    day0Instead: "Day 0：機場 → Dream Suite 入住 → Esco Beach 晚餐。大額換匯留 Day 1 09:00。",
   },
   earlyOptions: [
     {

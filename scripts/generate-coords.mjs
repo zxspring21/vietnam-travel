@@ -49,6 +49,10 @@ const KNOWN = [
   [/six on six/i, { lat: 16.055, lng: 108.215 }],
   [/tiệm vàng|soạn hà|換匯/i, { lat: 15.8792, lng: 108.3298 }],
   [/beach|沙灘|esco/i, { lat: 16.052, lng: 108.248 }],
+  [/dream suite|ha bổng|hà bổng/i, { lat: 16.0482, lng: 108.2475 }],
+  [/a la carte|vo nguyen giap|võ nguyên giáp/i, { lat: 16.051, lng: 108.246 }],
+  [/my hanh|美溪海鮮/i, { lat: 16.05, lng: 108.249 }],
+  [/thèm hải sản/i, { lat: 16.049, lng: 108.248 }],
 ];
 
 function placeNameFromUrl(url) {

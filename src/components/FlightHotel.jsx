@@ -1,7 +1,7 @@
 import { TRIP_CONFIG } from "../data/tripConfig";
 import { FLIGHT_BOOKING, PACKAGE_BOOKING, KLOOK_BOOKINGS } from "../data/bookedActivities";
 import { calcExpenseSummary, EXPENSE_ECONOMY_ACTIVE } from "../data/expenses";
-import { HOTELS } from "../data/hotels";
+import { HOTELS, DANANG_HOTEL_BOOKING } from "../data/hotels";
 import GooglePlaceMedia from "./GooglePlaceMedia";
 
 export default function FlightHotel() {
@@ -18,7 +18,11 @@ export default function FlightHotel() {
             <a href={PACKAGE_BOOKING.url} target="_blank" rel="noopener noreferrer" style={{ color: "#5B8DEF" }}>
               Trip.com 機加酒 ↗
             </a>
-            ：雙人 NT${PACKAGE_BOOKING.coupleTotal.toLocaleString()}（含機票，不再另計）
+            ：雙人 NT${PACKAGE_BOOKING.coupleTotal.toLocaleString()}（虎航 + Saga）
+          </li>
+          <li>
+            峴港 <strong>The Dream Suite</strong>（6/11–17）：雙人 NT$
+            {DANANG_HOTEL_BOOKING.coupleTotal.toLocaleString()}（獨立訂 · An Hải）
           </li>
           <li>
             航班：
@@ -46,7 +50,7 @@ export default function FlightHotel() {
         ))}
       </div>
 
-      <h3 className="section-title">🏨 住宿（機加酒內）</h3>
+      <h3 className="section-title">🏨 住宿</h3>
       {Object.values(HOTELS).map((h) => (
         <div key={h.id} className="card" style={{ marginBottom: "16px", padding: 0, overflow: "hidden" }}>
           <div style={{ display: "grid", gridTemplateColumns: "minmax(220px, 1fr) 1.2fr", gap: 0 }}>

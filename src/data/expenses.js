@@ -5,22 +5,30 @@ import {
   KLOOK_BOOKINGS,
   KLOOK_COUPLE_TOTAL,
 } from "./bookedActivities.js";
+import { DANANG_HOTEL_BOOKING } from "./hotels.js";
 
 export const BUDGET_TARGET_PER_PERSON = 80000;
 
 const GRAB_MISC = 3500;
+const TRIP_COM_FLIGHT_SAGA = PACKAGE_BOOKING.breakdown.tripComPackage;
 
 export const EXPENSE_CATEGORIES = [
   {
     id: "package",
-    label: "✈️🏨 機加酒（已訂，含機票）",
+    label: "✈️🏨 機加酒與住宿（已訂，含機票）",
     color: "#C8975A",
     items: [
       {
-        name: "Trip.com 6/11–6/20 虎航+Elite+Saga（2人）",
-        amount: PACKAGE_BOOKING.coupleTotal,
+        name: "Trip.com 虎航 + THE SAGA（6/17–20，2人）",
+        amount: TRIP_COM_FLIGHT_SAGA,
         link: PACKAGE_BOOKING.url,
-        note: `含虎航 IT551/IT552 · ${FLIGHT_BOOKING.baggage} · Elite Riverlight 6/11–17 · Saga 6/17–20`,
+        note: `含虎航 IT551/IT552 · ${FLIGHT_BOOKING.baggage} · Saga 機加酒`,
+      },
+      {
+        name: "The Dream Suite 夢想套房（6/11–17，2人）",
+        amount: DANANG_HOTEL_BOOKING.coupleTotal,
+        link: "https://tw.trip.com/hotels/list?city=669&keyword=The+Dream+Suite",
+        note: "121-123 Hà Bổng, An Hải · Klook 巴士集合點 A La Carte 步行可達",
       },
     ],
   },
@@ -32,7 +40,7 @@ export const EXPENSE_CATEGORIES = [
       name: b.name,
       amount: b.coupleTwd,
       link: b.url,
-      note: b.coversTransport ? "✓ 含交通" : b.note,
+      note: b.pickup ? `${b.pickup} · ${b.coversTransport ? "含交通" : b.note}` : b.coversTransport ? "✓ 含交通" : b.note,
     })),
   },
   {
@@ -41,10 +49,10 @@ export const EXPENSE_CATEGORIES = [
     color: "#3D8B8B",
     items: [
       {
-        name: "機場接送、市區短程、竹籃船至港口等",
+        name: "機場接送、市區短程、Dream Suite↔A La Carte 等",
         amount: GRAB_MISC,
         link: "https://www.google.com/maps/search/?api=1&query=Grab+Da+Nang",
-        note: "Klook 已涵蓋：巴拿山、順化、美山、烹飪課接送、印象秀、峴港↔會安接送",
+        note: "Klook 已涵蓋：巴拿山巴士、順化、美山、烹飪課、印象秀、峴港↔會安接送",
       },
     ],
   },
@@ -57,7 +65,7 @@ export const EXPENSE_CATEGORIES = [
         name: "每日三餐約 9 天（2人）",
         amount: 11000,
         link: "https://tw.trip.com/travel-guide/attraction/da-nang-669-food-and-drinks/",
-        note: "含早來自飯店；巴拿山/美山/印象秀午餐已含",
+        note: "含早來自飯店；美山/印象秀午餐已含；巴拿山園內自費",
       },
     ],
   },
@@ -74,10 +82,10 @@ export const EXPENSE_CATEGORIES = [
 export const EXPENSE_ECONOMY_ACTIVE = EXPENSE_CATEGORIES;
 
 export const TRANSPORT_COMPARE = [
-  { mode: "Klook 含巴士/團", cost: "見上方明細", bestFor: "巴拿山、順化、美山、印象秀、接送", pregnant: "✅", cp: "★★★★★" },
-  { mode: "Grab", cost: "NT$80–150/趟", bestFor: "市區、送機、竹籃船短程", pregnant: "✅", cp: "★★★★" },
+  { mode: "Klook 含巴士/團", cost: "見上方明細", bestFor: "巴拿山、順化、峴港一日遊、美山、印象秀、接送", pregnant: "✅", cp: "★★★★★" },
+  { mode: "Grab", cost: "NT$80–150/趟", bestFor: "An Hải 市區、送機、集合點", pregnant: "✅", cp: "★★★★" },
   { mode: "租機車", cost: "—", bestFor: "本行程不建議", pregnant: "❌", cp: "—" },
-  { mode: "包車", cost: "—", bestFor: "已由 Klook 順化團取代", pregnant: "—", cp: "—" },
+  { mode: "包車", cost: "—", bestFor: "已由 Klook 團取代", pregnant: "—", cp: "—" },
 ];
 
 export function calcExpenseSummary(categories = EXPENSE_ECONOMY_ACTIVE) {
@@ -103,11 +111,11 @@ export const BUDGET_TIERS = {
   economy: {
     id: "economy",
     label: "✅ 已訂票券加總",
-    desc: `機加酒（含機票）+Klook+Grab 等`,
+    desc: `機加酒+Dream Suite+Klook+Grab 等`,
     perPerson: _s.perPerson,
     coupleTotal: _s.total,
     highlights: [
-      `機加酒（含機票）NT$${PACKAGE_BOOKING.coupleTotal.toLocaleString()}`,
+      `Trip.com+Dream Suite NT$${(TRIP_COM_FLIGHT_SAGA + DANANG_HOTEL_BOOKING.coupleTotal).toLocaleString()}`,
       `Klook NT$${KLOOK_COUPLE_TOTAL.toLocaleString()}`,
     ],
   },
